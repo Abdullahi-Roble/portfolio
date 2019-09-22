@@ -19,10 +19,6 @@
         // padding: 40px 0 0 0;
     }
 
-    img {
-        width: 100%;
-    }
-
     .boxLeft {
         width: 260px;
         height: 260px;
@@ -53,18 +49,55 @@
 // Skills Section
 
 .mySkills {
-    display: flex;
-    flex-flow: column wrap;
+    // display: flex;
+    // flex-flow: column wrap;
+    position: relative;
 
-      .boxLeft {
+    .skillsList {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .boxRight {
         width: 260px;
         height: 260px;
         background: $primary;
         position: absolute;
-        top: 272px;
-        left: 600px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
+        top: 100px;
+        right: 250px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .skillsPic {
+        width: 33%;
+    }
+
+    .techSkills {
+        padding: 50px 0 0 0;
+        z-index: 99;
+        text-align: center;
+
+        i {
+            font-size: 3rem;
+        }
+    }
+
+    .tech1, 
+    .tech2,
+    .addTools {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    h1 {
+        text-align: right;
+        position: absolute;
+        top: 140px;
+        right: 300px;
+        font-size: 3rem;
     }
 }
 

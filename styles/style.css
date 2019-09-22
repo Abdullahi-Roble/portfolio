@@ -190,6 +190,10 @@ html {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   background: #133039;
@@ -435,6 +439,10 @@ html {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   background: #133039;
@@ -678,6 +686,10 @@ html {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }
 
 body {
@@ -866,10 +878,6 @@ header .copyright p {
   width: 50%;
 }
 
-.aboutMe img {
-  width: 100%;
-}
-
 .aboutMe .boxLeft {
   width: 260px;
   height: 260px;
@@ -895,22 +903,63 @@ header .copyright p {
 }
 
 .mySkills {
+  position: relative;
+}
+
+.mySkills .skillsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
 }
 
-.mySkills .boxLeft {
+.mySkills .boxRight {
   width: 260px;
   height: 260px;
   background: #133039;
   position: absolute;
-  top: 272px;
-  left: 600px;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  top: 100px;
+  right: 250px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.mySkills .skillsPic {
+  width: 33%;
+}
+
+.mySkills .techSkills {
+  padding: 50px 0 0 0;
+  z-index: 99;
+  text-align: center;
+}
+
+.mySkills .techSkills i {
+  font-size: 3rem;
+}
+
+.mySkills .tech1,
+.mySkills .tech2,
+.mySkills .addTools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 0;
+}
+
+.mySkills h1 {
+  text-align: right;
+  position: absolute;
+  top: 140px;
+  right: 300px;
+  font-size: 3rem;
 }
