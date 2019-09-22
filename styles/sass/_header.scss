@@ -1,6 +1,84 @@
+@import 'setup';
+@import 'variables';
 
-// Header Styling
+header {
+    background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
+    // background: linear-gradient(to bottom, $primary, 90%, $secondary);
+    background-size: 50vw;
+    height: 100vh;
+    position: relative;
 
-.menu ul {
-    list-style: none;
+    .topBar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    ul {
+        width: 500px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .mainHead {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .box {
+        width: 260px;
+        height: 260px;
+        background: $primary;
+        position: absolute;
+        top: 272px;
+        left: 600px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    h1 {
+        padding: 130px 500px;
+        z-index: 99;
+        font-size: 4rem;
+    }
+
+    .title {
+        position: absolute;
+        top: 505px;
+        left: 875px;
+
+        h4 {
+            padding-left: 25px;
+        }
+
+        .headLinks {
+            padding-top: 30px;
+            width: 400px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    .copywright p {
+        writing-mode: sideways-lr;
+        position: absolute;
+        top: 500px;
+        right: 0;
+    }
 }
