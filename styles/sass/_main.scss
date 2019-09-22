@@ -1,16 +1,72 @@
 @import 'setup';
 @import 'variables';
+@import 'header';
+@import 'footer';
 
 
 // About Me Section
 
-.aboutMe {}
+.aboutMe {
+    position: relative;
+
+    .portfolioIntro {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .profilePic {
+        width: 50%;
+        // padding: 40px 0 0 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .boxLeft {
+        width: 260px;
+        height: 260px;
+        background: $primary;
+        position: absolute;
+        top: 80px;
+        left: 350px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    .myStory {
+        padding: 75px 100px 0 200px;
+        z-index: 99;
+        
+    }
+    h1 {
+        padding: 50px 800px 0 0;
+        position: absolute;
+        top: 40px;
+        left: 425px;
+        font-size: 3rem;
+    }
+}
 
 
 
 // Skills Section
 
-.mySkills {}
+.mySkills {
+    display: flex;
+    flex-flow: column wrap;
+
+      .boxLeft {
+        width: 260px;
+        height: 260px;
+        background: $primary;
+        position: absolute;
+        top: 272px;
+        left: 600px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+}
 
 
 

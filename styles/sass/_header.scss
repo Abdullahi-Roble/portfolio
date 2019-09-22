@@ -5,6 +5,7 @@ header {
     background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
     // background: linear-gradient(to bottom, $primary, 90%, $secondary);
     background-size: 50vw;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
 
@@ -39,7 +40,7 @@ header {
         flex-flow: column;
     }
 
-    .box {
+    .boxLeft {
         width: 260px;
         height: 260px;
         background: $primary;
@@ -66,7 +67,7 @@ header {
         }
 
         .headLinks {
-            padding-top: 30px;
+            padding-top: 10px;
             width: 400px;
             display: flex;
             flex-flow: row nowrap;
@@ -75,10 +76,11 @@ header {
         }
     }
 
-    .copywright p {
+    .copyright p {
+        height: 500px; 
         writing-mode: sideways-lr;
         position: absolute;
-        top: 500px;
+        top: 245px;
         right: 0;
     }
 }
