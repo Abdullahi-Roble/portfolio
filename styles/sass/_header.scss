@@ -86,4 +86,30 @@ header {
         top: 245px;
         right: 0;
     }
+
+    .scrollDown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .4s;
+
+        .scrollIcon {
+            height: 2rem;
+            width: 1.2rem;
+            font-size: 2.2rem;
+            color: $primary;
+            border-radius: 2em;
+            border: solid 3px;
+            margin-top: 3rem;
+
+            &::after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: $primary;
+                border-radius: 50%;
+                animation: scroll 2s infinite;
+            }
+        }
+    }    
 }

@@ -8,6 +8,8 @@
 
 .aboutMe {
     position: relative;
+    background: $accent;
+    color: $tertiary;
 
     .portfolioIntro {
         display: flex;
@@ -22,7 +24,7 @@
     .boxLeft {
         width: 260px;
         height: 260px;
-        background: $secondary;
+        background: $accent;
         position: absolute;
         top: 80px;
         left: 400px;
@@ -31,10 +33,10 @@
     }
 
     .myStory {
-        padding: 75px 100px 0 200px;
-        z-index: 99;
-        
+        padding: 120px 100px 0 200px;
+        z-index: 99; 
     }
+    
     h1 {
         padding: 50px 800px 0 0;
         position: absolute;
@@ -42,9 +44,11 @@
         left: 475px;
         font-size: 3rem;
     }
+
+    .blurb {
+        padding-top: 20px;
+    }
 }
-
-
 
 // Skills Section
 
@@ -52,6 +56,7 @@
     // display: flex;
     // flex-flow: column wrap;
     position: relative;
+    background: $secondary;
 
     .skillsList {
         display: flex;
@@ -102,26 +107,43 @@
     }
 }
 
-
-
 // Portfolio Section
 
 .myWorks {
     position: relative;
+    background: $tertiary;
+
+    .portProjects {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 
     .boxLeft {
         width: 260px;
         height: 260px;
-        background: $secondary;
+        background: $tertiary;
         position: absolute;
         top: 80px;
-        left: 350px;
+        left: 300px;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
     }
 
     .worksPic {
-        width: 35%;
+        width: 45%;
+    }
+
+    h1 {
+        padding: 50px 500px 0 0;
+        position: absolute;
+        top: 60px;
+        left: 350px;
+        font-size: 3rem;
+    }
+
+    .portWorks {
+        padding: 150px 0 0 300px;
+        z-index: 99;
     }
 }
 

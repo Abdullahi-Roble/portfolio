@@ -216,7 +216,7 @@ body a:hover {
 
 body button {
   background: transparent;
-  border: 1px solid #191e36;
+  border: 3px solid #191e36;
   padding: 20px 30px;
   border-radius: 500px;
   color: #191e36;
@@ -233,7 +233,7 @@ body .media {
 }
 
 body .media i {
-  border: 1px solid #191e36;
+  border: 3px solid #191e36;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
@@ -245,7 +245,7 @@ body .media i {
 body .media i:hover {
   color: #fff;
   background: #191e36;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
 }
 
 body .techSkills i {
@@ -486,7 +486,7 @@ body a:hover {
 
 body button {
   background: transparent;
-  border: 1px solid #191e36;
+  border: 3px solid #191e36;
   padding: 20px 30px;
   border-radius: 500px;
   color: #191e36;
@@ -503,7 +503,7 @@ body .media {
 }
 
 body .media i {
-  border: 1px solid #191e36;
+  border: 3px solid #191e36;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
@@ -515,7 +515,7 @@ body .media i {
 body .media i:hover {
   color: #fff;
   background: #191e36;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
 }
 
 body .techSkills i {
@@ -756,7 +756,7 @@ body a:hover {
 
 body button {
   background: transparent;
-  border: 1px solid #191e36;
+  border: 3px solid #191e36;
   padding: 20px 30px;
   border-radius: 500px;
   color: #191e36;
@@ -773,7 +773,7 @@ body .media {
 }
 
 body .media i {
-  border: 1px solid #191e36;
+  border: 3px solid #191e36;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
@@ -785,7 +785,7 @@ body .media i {
 body .media i:hover {
   color: #fff;
   background: #191e36;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
 }
 
 body .techSkills i {
@@ -913,8 +913,44 @@ header .copyright p {
   right: 0;
 }
 
+header .scrollDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .scrollDown .scrollIcon {
+  height: 2rem;
+  width: 1.2rem;
+  font-size: 2.2rem;
+  color: #283048;
+  border-radius: 2em;
+  border: solid 3px;
+  margin-top: 3rem;
+}
+
+header .scrollDown .scrollIcon::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #283048;
+  border-radius: 50%;
+  -webkit-animation: scroll 2s infinite;
+          animation: scroll 2s infinite;
+}
+
 .aboutMe {
   position: relative;
+  background: #191e36;
+  color: #c9c9c9;
 }
 
 .aboutMe .portfolioIntro {
@@ -934,7 +970,7 @@ header .copyright p {
 .aboutMe .boxLeft {
   width: 260px;
   height: 260px;
-  background: #859398;
+  background: #191e36;
   position: absolute;
   top: 80px;
   left: 400px;
@@ -943,7 +979,7 @@ header .copyright p {
 }
 
 .aboutMe .myStory {
-  padding: 75px 100px 0 200px;
+  padding: 120px 100px 0 200px;
   z-index: 99;
 }
 
@@ -955,8 +991,13 @@ header .copyright p {
   font-size: 3rem;
 }
 
+.aboutMe .blurb {
+  padding-top: 20px;
+}
+
 .mySkills {
   position: relative;
+  background: #859398;
 }
 
 .mySkills .skillsList {
@@ -1019,19 +1060,43 @@ header .copyright p {
 
 .myWorks {
   position: relative;
+  background: #c9c9c9;
+}
+
+.myWorks .portProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .myWorks .boxLeft {
   width: 260px;
   height: 260px;
-  background: #859398;
+  background: #c9c9c9;
   position: absolute;
   top: 80px;
-  left: 350px;
+  left: 300px;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
 
 .myWorks .worksPic {
-  width: 35%;
+  width: 45%;
+}
+
+.myWorks h1 {
+  padding: 50px 500px 0 0;
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  font-size: 3rem;
+}
+
+.myWorks .portWorks {
+  padding: 150px 0 0 300px;
+  z-index: 99;
 }
