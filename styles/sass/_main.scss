@@ -15,17 +15,17 @@
     }
 
     .profilePic {
-        width: 50%;
+        width: 66%;
         // padding: 40px 0 0 0;
     }
 
     .boxLeft {
         width: 260px;
         height: 260px;
-        background: $primary;
+        background: $secondary;
         position: absolute;
         top: 80px;
-        left: 350px;
+        left: 400px;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
     }
@@ -39,7 +39,7 @@
         padding: 50px 800px 0 0;
         position: absolute;
         top: 40px;
-        left: 425px;
+        left: 475px;
         font-size: 3rem;
     }
 }
@@ -58,19 +58,28 @@
         flex-flow: row-reverse nowrap;
     }
 
+    
+    h1 {
+        text-align: right;
+        position: absolute;
+        top: 140px;
+        right: 360px;
+        font-size: 3rem;
+    }
+
     .boxRight {
         width: 260px;
         height: 260px;
-        background: $primary;
+        background: $secondary;
         position: absolute;
         top: 100px;
-        right: 250px;
+        right: 300px;
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
     }
 
     .skillsPic {
-        width: 33%;
+        width: 44.25%;
     }
 
     .techSkills {
@@ -91,21 +100,30 @@
         justify-content: space-around;
         padding: 50px 0;
     }
-
-    h1 {
-        text-align: right;
-        position: absolute;
-        top: 140px;
-        right: 300px;
-        font-size: 3rem;
-    }
 }
 
 
 
 // Portfolio Section
 
-.myWorks {}
+.myWorks {
+    position: relative;
+
+    .boxLeft {
+        width: 260px;
+        height: 260px;
+        background: $secondary;
+        position: absolute;
+        top: 80px;
+        left: 350px;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    .worksPic {
+        width: 35%;
+    }
+}
 
 
 

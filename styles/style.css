@@ -182,7 +182,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%;
   max-width: 100vw;
-  color: #fff;
+  color: #191e36;
 }
 
 .wrapper {
@@ -194,9 +194,13 @@ img {
   width: 100%;
 }
 
+section {
+  height: 100vh;
+}
+
 body {
   font-family: "Cairo", sans-serif;
-  background: #133039;
+  background: #859398;
 }
 
 body a {
@@ -207,33 +211,50 @@ body a {
 }
 
 body a:hover {
-  color: #68e0cf;
+  color: #191e36;
 }
 
 body button {
   background: transparent;
-  border: 1px solid #68e0cf;
+  border: 1px solid #191e36;
   padding: 20px 30px;
   border-radius: 500px;
+  color: #191e36;
+}
+
+body button:hover {
+  background: #191e36;
+  color: #fff;
 }
 
 body .media {
-  padding: 20px 0 0 800px;
+  padding: 20px 0 0 50px;
+  margin: 0 auto;
 }
 
 body .media i {
-  border: 1px solid #68e0cf;
+  border: 1px solid #191e36;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #68e0cf;
+  color: #191e36;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body .media i:hover {
   color: #fff;
+  background: #191e36;
   border: 1px solid #fff;
+}
+
+body .techSkills i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .techSkills i:hover {
+  color: #fff;
 }
 
 h1,
@@ -431,7 +452,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%;
   max-width: 100vw;
-  color: #fff;
+  color: #191e36;
 }
 
 .wrapper {
@@ -443,9 +464,13 @@ img {
   width: 100%;
 }
 
+section {
+  height: 100vh;
+}
+
 body {
   font-family: "Cairo", sans-serif;
-  background: #133039;
+  background: #859398;
 }
 
 body a {
@@ -456,33 +481,50 @@ body a {
 }
 
 body a:hover {
-  color: #68e0cf;
+  color: #191e36;
 }
 
 body button {
   background: transparent;
-  border: 1px solid #68e0cf;
+  border: 1px solid #191e36;
   padding: 20px 30px;
   border-radius: 500px;
+  color: #191e36;
+}
+
+body button:hover {
+  background: #191e36;
+  color: #fff;
 }
 
 body .media {
-  padding: 20px 0 0 800px;
+  padding: 20px 0 0 50px;
+  margin: 0 auto;
 }
 
 body .media i {
-  border: 1px solid #68e0cf;
+  border: 1px solid #191e36;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #68e0cf;
+  color: #191e36;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body .media i:hover {
   color: #fff;
+  background: #191e36;
   border: 1px solid #fff;
+}
+
+body .techSkills i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .techSkills i:hover {
+  color: #fff;
 }
 
 h1,
@@ -680,7 +722,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%;
   max-width: 100vw;
-  color: #fff;
+  color: #191e36;
 }
 
 .wrapper {
@@ -692,9 +734,13 @@ img {
   width: 100%;
 }
 
+section {
+  height: 100vh;
+}
+
 body {
   font-family: "Cairo", sans-serif;
-  background: #133039;
+  background: #859398;
 }
 
 body a {
@@ -705,33 +751,50 @@ body a {
 }
 
 body a:hover {
-  color: #68e0cf;
+  color: #191e36;
 }
 
 body button {
   background: transparent;
-  border: 1px solid #68e0cf;
+  border: 1px solid #191e36;
   padding: 20px 30px;
   border-radius: 500px;
+  color: #191e36;
+}
+
+body button:hover {
+  background: #191e36;
+  color: #fff;
 }
 
 body .media {
-  padding: 20px 0 0 800px;
+  padding: 20px 0 0 50px;
+  margin: 0 auto;
 }
 
 body .media i {
-  border: 1px solid #68e0cf;
+  border: 1px solid #191e36;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #68e0cf;
+  color: #191e36;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body .media i:hover {
   color: #fff;
+  background: #191e36;
   border: 1px solid #fff;
+}
+
+body .techSkills i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .techSkills i:hover {
+  color: #fff;
 }
 
 h1,
@@ -746,7 +809,8 @@ ul {
 }
 
 header {
-  background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#283048), color-stop(70%), to(#859398));
+  background: linear-gradient(to bottom, #283048, 70%, #859398);
   background-size: 50vw;
   background-attachment: fixed;
   height: 100vh;
@@ -806,27 +870,15 @@ header .mainHead {
           flex-flow: column;
 }
 
-header .boxLeft {
-  width: 260px;
-  height: 260px;
-  background: #133039;
-  position: absolute;
-  top: 272px;
-  left: 600px;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
 header h1 {
-  padding: 130px 500px;
+  padding: 130px 0 0 0;
   z-index: 99;
   font-size: 4rem;
+  margin: 0 auto;
 }
 
 header .title {
-  position: absolute;
-  top: 505px;
-  left: 875px;
+  text-align: center;
 }
 
 header .title h4 {
@@ -834,7 +886,8 @@ header .title h4 {
 }
 
 header .title .headLinks {
-  padding-top: 10px;
+  padding: 10px;
+  margin: 0 auto;
   width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,16 +928,16 @@ header .copyright p {
 }
 
 .aboutMe .profilePic {
-  width: 50%;
+  width: 66%;
 }
 
 .aboutMe .boxLeft {
   width: 260px;
   height: 260px;
-  background: #133039;
+  background: #859398;
   position: absolute;
   top: 80px;
-  left: 350px;
+  left: 400px;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
@@ -898,7 +951,7 @@ header .copyright p {
   padding: 50px 800px 0 0;
   position: absolute;
   top: 40px;
-  left: 425px;
+  left: 475px;
   font-size: 3rem;
 }
 
@@ -916,19 +969,27 @@ header .copyright p {
           flex-flow: row-reverse nowrap;
 }
 
+.mySkills h1 {
+  text-align: right;
+  position: absolute;
+  top: 140px;
+  right: 360px;
+  font-size: 3rem;
+}
+
 .mySkills .boxRight {
   width: 260px;
   height: 260px;
-  background: #133039;
+  background: #859398;
   position: absolute;
   top: 100px;
-  right: 250px;
+  right: 300px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
 .mySkills .skillsPic {
-  width: 33%;
+  width: 44.25%;
 }
 
 .mySkills .techSkills {
@@ -956,10 +1017,21 @@ header .copyright p {
   padding: 50px 0;
 }
 
-.mySkills h1 {
-  text-align: right;
+.myWorks {
+  position: relative;
+}
+
+.myWorks .boxLeft {
+  width: 260px;
+  height: 260px;
+  background: #859398;
   position: absolute;
-  top: 140px;
-  right: 300px;
-  font-size: 3rem;
+  top: 80px;
+  left: 350px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.myWorks .worksPic {
+  width: 35%;
 }

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/png" href="/styles/assets/ar-logo2.png">
+    <link rel="icon" type="image/png" href="/styles/assets/ar-logo3.png">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,700|Orbitron:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://kit.fontawesome.com/8e6d078a29.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/aos/src/sass/aos.scss" />
     <title>Abdullah Roble</title>
 </head>
 <body>
@@ -17,7 +21,7 @@
         <!-- <div class="overhead"></div> -->
         <div class="topBar wrapper">
             <div class="logo">
-                <img src="/styles/assets/ar-logo2.png" alt="Logo depicting initials of website's subject">
+                <img src="/styles/assets/ar-logo3.png" alt="Logo depicting initials of website's subject">
             </div>
             <nav class="menu">
                 <ul>
@@ -32,9 +36,11 @@
             <div class="boxLeft"></div>
             <h1>Abdullahi <span class="lastName">Roble</span></h1>
             <div class="title">
-                <h4>Front-End Web Developer</h4>
+                <div class="typedTitles">
+                    <h2><span class="titleType"></span></h2>
+                </div>
                 <div class="headLinks">
-                    <button><a href="#about">About Me <i class="fas fa-chevron-right"></i></a></button>
+                    <a href="#about"><button>About Me <i class="fas fa-chevron-right"></i></button></a>
                     <a href="">Contact Me Now <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
@@ -50,7 +56,6 @@
     </header>
     <main>
         <section id="about" class="aboutMe">
-            <!-- <button><a href="">Download Resume</a></button> -->
             <div class="portfolioIntro">
                 <div class="profilePic">
                     <img src="/styles/assets/self3.png" alt="">
@@ -59,11 +64,13 @@
                 <div class="myStory wrapper">
                     <div class="titlesTitles">
                         <h1>About Me</h1>
-                        <h4>My Story</h4>
+                        <h2>Nice to meet you! I'm Abdullahi Roble.</h2>
+                        <h4>(Pronounced: Ab-duul-lawh-hee Robe-leh.)</h4>
                     </div>
                     <div class="blurb">
-                    	<p>My name is Abdullahi Roble, but I also go by Abdullah. I'm a Front-End Web Developer based in Toronto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sunt soluta cumque perspiciatis necessitatibus, exercitationem qui facere dignissimos praesentium? Repellat ea esse aliquam facilis, eius eos atque quaerat ipsa ullam neque autem sunt ipsum harum necessitatibus sint deserunt at eaque magnam soluta rerum quo vel aut voluptatum! Excepturi, esse autem.</p>
-                    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nam molestiae laudantium pariatur. Quia aut soluta, vero a fugiat, ab minima officiis ducimus explicabo tempore repellendus quam tenetur. Itaque, beatae.</p>
+                    	<p>I also go by Abdullah! I'm a Front-End Web Developer based in Toronto.</p>
+                        <p>Before becoming a Developer, I worked in Information Technology, but my work was more hardware-oriented, focusing primarily on technical solutions. My experiences working with and for people who are always seeking assistance with one issue or another shape my approach to coding, which is to create websites and applications that are not only useful, but solve problems and serve purposes and needs.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -71,13 +78,13 @@
         <section id="skills" class="mySkills">
             <div class="skillsList">
                 <div class="skillsPic">
-                    <img src="/styles/assets/linesOfCode.jpg" alt="">
-                    <!-- Photo by Oscar Nord on Unsplash -->
+                    <img src="/styles/assets/bookshelf.jpg" alt="">
+                    <!-- Photo by Dakota Corbin on Unsplash -->
                     <div class="boxRight"></div>
                 </div>
                 <div class="techSkills wrapper">
                     <h1>Skills</h1>
-                    <h4>Technologies I Have Learned</h4>
+                    <h2>Technologies I Have Learned</h2>
                     <div class="toolKit wrapper">
                         <div class="tech1">
                             <i class="devicon-html5-plain"></i>
@@ -92,7 +99,7 @@
                             <i class="devicon-github-plain"></i>
                         </div>
                     </div>
-                    <h4>Technologies I Will Learn</h4>
+                    <h2>Technologies I Will Learn</h2>
                     <div class="addTools wrapper">
                         <i class="devicon-angularjs-plain"></i>
                         <i class="devicon-vuejs-plain"></i>
@@ -103,12 +110,21 @@
             </div>
         </section>
         <section id="portfolio" class="myWorks">
-            <h1>Portfolio</h1>
-            <h4>Some Cool Projects I have Made</h4>
+            <div class="portProjects">
+                <div class="worksPic">
+                    <img src="/styles/assets/linesOfCode.jpg" alt="">
+                    <!-- Photo by Oscar Nord on Unsplash -->
+                    <div class="boxLeft"></div>
+                </div>
+                <div class="portWorks wrapper">
+                    <h1>Portfolio</h1>
+                    <h2>Some Cool Projects I have Made</h2>
+                </div>
+            </div>
         </section>
         <section id="contact" class="contactMe">
             <h1>Contact</h1>
-            <h4>Let's Talk!</h4>
+            <h2>Let's Talk!</h2>
             <form action="submit">
                 <fieldset>
                     <label for="name">Full Name</label>

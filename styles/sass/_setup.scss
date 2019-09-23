@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 html {
     font-size: 125%;
     max-width: 100vw;
-    color: #fff;
+    color: $accent;
 }
 
 .wrapper {
@@ -24,9 +24,14 @@ img {
     width: 100%;
 }
 
+section {
+    height: 100vh;
+}
+
 body {
     font-family: $mainFont;
-    background: $primary;
+    // background: $primary;
+    background: $secondary;
 
     a {
         text-decoration: none;
@@ -44,10 +49,17 @@ body {
         border: 1px solid $accent;
         padding: 20px 30px;
         border-radius: 500px;
+        color: $accent;
+        
+        &:hover {
+            background: $accent;
+            color: #fff;
+        }
     }
 
     .media {
-        padding: 20px 0 0 800px;
+        padding: 20px 0 0 50px;
+        margin: 0 auto;
     }
 
     .media i {
@@ -60,7 +72,16 @@ body {
 
         &:hover {
             color: #fff;
+            background: $accent;
             border: 1px solid #fff;
+        }
+    }
+
+    .techSkills i {
+        transition: 0.3s;
+
+        &:hover {
+            color: #fff;
         }
     }
 }

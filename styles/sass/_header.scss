@@ -2,8 +2,8 @@
 @import 'variables';
 
 header {
-    background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
-    // background: linear-gradient(to bottom, $primary, 90%, $secondary);
+    // background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
+    background: linear-gradient(to bottom, $primary, 70%, $secondary);
     background-size: 50vw;
     background-attachment: fixed;
     height: 100vh;
@@ -40,34 +40,37 @@ header {
         flex-flow: column;
     }
 
-    .boxLeft {
-        width: 260px;
-        height: 260px;
-        background: $primary;
-        position: absolute;
-        top: 272px;
-        left: 600px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-    }
+    // .boxLeft {
+    //     width: 260px;
+    //     height: 260px;
+    //     background: $primary;
+    //     position: absolute;
+    //     top: 272px;
+    //     left: 600px;
+    //     border-top-left-radius: 50%;
+    //     border-bottom-left-radius: 50%;
+    // }
 
     h1 {
-        padding: 130px 500px;
+        padding: 130px 0 0 0;
         z-index: 99;
         font-size: 4rem;
+        margin: 0 auto;
     }
 
     .title {
-        position: absolute;
-        top: 505px;
-        left: 875px;
+        // position: absolute;
+        // top: 505px;
+        // left: 875px;
+        text-align: center;
 
         h4 {
             padding-left: 25px;
         }
 
         .headLinks {
-            padding-top: 10px;
+            padding: 10px;
+            margin: 0 auto;
             width: 400px;
             display: flex;
             flex-flow: row nowrap;
