@@ -14,7 +14,7 @@ const typed = new Typed('.titleType', titles);
 
 // Initiating flickity for portfolio works
 
-const elem = document.querySelector('.mainCarousel');
+const elem = document.querySelector('.galleryWorks');
 const flkty = new Flickity(elem, {
     // options
     cellAlign: 'left',

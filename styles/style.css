@@ -1068,10 +1068,10 @@ header .scrollDown .scrollIcon::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .myWorks .boxLeft {
@@ -1080,13 +1080,13 @@ header .scrollDown .scrollIcon::after {
   background: #191e36;
   position: absolute;
   top: 80px;
-  left: 300px;
+  left: 320px;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
 
 .myWorks .worksPic {
-  width: 45%;
+  width: 38%;
 }
 
 .myWorks h1 {
@@ -1097,13 +1097,21 @@ header .scrollDown .scrollIcon::after {
   font-size: 3rem;
 }
 
+.myWorks h2 {
+  text-align: center;
+}
+
 .myWorks .portWorks {
   text-align: center;
   z-index: 99;
 }
 
 .myWorks .galleryWorks {
-  width: 60%;
+  width: 40%;
+}
+
+.myWorks .galleryCell {
+  width: 100%;
 }
 
 .myWorks figure {
@@ -1112,8 +1120,8 @@ header .scrollDown .scrollIcon::after {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 
 .myWorks figure figcaption {

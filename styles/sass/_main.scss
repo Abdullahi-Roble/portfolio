@@ -116,7 +116,7 @@
 
     .portProjects {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
     }
 
     .boxLeft {
@@ -125,13 +125,13 @@
         background: $accent;
         position: absolute;
         top: 80px;
-        left: 300px;
+        left: 320px;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
     }
 
     .worksPic {
-        width: 45%;
+        width: 38%;
     }
 
     h1 {
@@ -142,23 +142,37 @@
         font-size: 3rem;
     }
 
+    h2 {
+        // padding: 0 0 0 100px;
+        text-align: center;
+    }
+
     .portWorks {
-        // padding: 150px 0 0 300px;
+        // padding: 0 0 300px 0;
         text-align: center;
         z-index: 99;
     }
 
     .galleryWorks {
-        width: 60%;
+        width: 40%;
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // height: 100vh;
+        // margin: 0 50%;
         // display: flex;
         // flex-flow: row nowrap;
         // justify-content: space-between;
         // align-items: flex-start;
     }
 
+    .galleryCell {
+        width: 100%;
+    }
+
     figure {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         
 
         figcaption {
@@ -187,4 +201,6 @@
 
 // Contact Section
 
-// .contactMe {}
+.contactMe {
+
+}
