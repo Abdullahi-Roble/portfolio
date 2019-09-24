@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/png" href="/styles/assets/ar-logo3.png">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,700|Orbitron:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/styles/assets/ar-logo3.png">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src="https://kit.fontawesome.com/8e6d078a29.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/node_modules/aos/src/sass/aos.scss" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
     <title>Abdullah Roble</title>
 </head>
 <body>
@@ -62,6 +59,7 @@
             <div class="portfolioIntro">
                 <div class="profilePic">
                     <img src="/styles/assets/self3.png" alt="">
+                    <!-- headshot by Fatima Gueye -->
                     <div class="boxLeft"></div>
                 </div>
                 <div class="myStory wrapper">
@@ -119,8 +117,48 @@
                     <div class="boxLeft"></div>
                 </div>
                 <div class="portWorks wrapper">
-                    <h1>Portfolio</h1>
-                    <h2>Some Cool Projects I have Made</h2>
+                    <h1>Works</h1>
+                    <h2>My Portfolio</h2>
+                    <div class="galleryWorks wrapper">
+                        <div class="gallery">
+                            <figure>
+                                <img src="/styles/assets/zoltarSpeaks.png" alt="">
+                                <figcaption>
+                                    <h4>Zoltar Speaks</h4>
+                                    <p>A React app that provides a result based upon the user's input (A wish granted!), but only after the user navigates a maze! Can you manage to have your wish granted by Zoltar?</p>
+                                    <h5>React | React Router | JavaScript | Sass | CSS3 | Advise Slip API</h5>
+                                    <div class="workLinks">
+                                        <a href=""><i class="fas fa-link"></i></a>
+                                        <a href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="diaryApp">
+                                <img src="/styles/assets/dietaryDiary.png" alt="">
+                                <figcaption>
+                                    <h4>Di<span class="dietTitle">et</span>ary</h4>
+                                    <p>A React app that uses Firebase to record user entries in their food log! It also automatically calculates calories consumed upon entry.</p>
+                                    <h5>React | Firebase | Javascript | CSS3 </h5>
+                                    <div class="workLinks">
+                                        <a href=""><i class="fas fa-link"></i></a>
+                                        <a href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/styles/assets/sanctuaryHelpers.png" alt="">
+                                <figcaption>
+                                    <h4>Sanctuary Helpers</h4>
+                                    <p>PSD conversion into a fully responsive website.</p>
+                                    <h5>HTML5 | CSS3 | Sass</h5>
+                                    <div class="workLinks">
+                                        <a href=""><i class="fas fa-link"></i></a>
+                                        <a href=""><i class="fab fa-github"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,6 +201,14 @@
             <a href=""><i class="fas fa-at"></i></a>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/8e6d078a29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
     <script src="scripts/script.js"></script>  
 </body>
 </html>

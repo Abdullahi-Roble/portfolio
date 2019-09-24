@@ -195,7 +195,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -465,7 +465,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -735,7 +735,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -1060,7 +1060,8 @@ header .scrollDown .scrollIcon::after {
 
 .myWorks {
   position: relative;
-  background: #c9c9c9;
+  background: #191e36;
+  color: #c9c9c9;
 }
 
 .myWorks .portProjects {
@@ -1076,7 +1077,7 @@ header .scrollDown .scrollIcon::after {
 .myWorks .boxLeft {
   width: 260px;
   height: 260px;
-  background: #c9c9c9;
+  background: #191e36;
   position: absolute;
   top: 80px;
   left: 300px;
@@ -1097,6 +1098,45 @@ header .scrollDown .scrollIcon::after {
 }
 
 .myWorks .portWorks {
-  padding: 150px 0 0 300px;
+  text-align: center;
   z-index: 99;
+}
+
+.myWorks .galleryWorks {
+  width: 60%;
+}
+
+.myWorks figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.myWorks figure figcaption {
+  background: #859398;
+  color: #191e36;
+}
+
+.myWorks .workLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.myWorks .workLinks a {
+  margin: 0 5% 2%;
 }

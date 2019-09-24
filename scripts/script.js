@@ -1,4 +1,6 @@
 
+// Implementing typed.js into header
+
 const titles = {
     strings: [" Front-End Software Engineer", " Technology Enthusiast", "Indoor Sportsman", " Front-End Developer"],
     startDelay: 500,
@@ -9,8 +11,17 @@ const titles = {
 }
 const typed = new Typed('.titleType', titles);
 
+
+// Initiating flickity for portfolio works
+
+const elem = document.querySelector('.mainCarousel');
+const flkty = new Flickity(elem, {
+    // options
+    cellAlign: 'left',
+    contain: true,
+    wrapAround: true
+});
+
 $(document).ready(function(){
-
-
     AOS.init();
 });

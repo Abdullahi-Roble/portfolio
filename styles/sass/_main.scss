@@ -111,7 +111,8 @@
 
 .myWorks {
     position: relative;
-    background: $tertiary;
+    background: $accent;
+    color: $tertiary;
 
     .portProjects {
         display: flex;
@@ -121,7 +122,7 @@
     .boxLeft {
         width: 260px;
         height: 260px;
-        background: $tertiary;
+        background: $accent;
         position: absolute;
         top: 80px;
         left: 300px;
@@ -142,8 +143,43 @@
     }
 
     .portWorks {
-        padding: 150px 0 0 300px;
+        // padding: 150px 0 0 300px;
+        text-align: center;
         z-index: 99;
+    }
+
+    .galleryWorks {
+        width: 60%;
+        // display: flex;
+        // flex-flow: row nowrap;
+        // justify-content: space-between;
+        // align-items: flex-start;
+    }
+
+    figure {
+        display: flex;
+        flex-flow: column nowrap;
+        
+
+        figcaption {
+            background: $secondary;
+            color: $accent;
+        }
+    }
+
+    // .diaryApp {
+    //     margin: 0 5%;
+    // }
+
+    .workLinks {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        a {
+            margin: 0 5% 2%;
+        }
     }
 }
 
@@ -151,4 +187,4 @@
 
 // Contact Section
 
-.contactMe {}
+// .contactMe {}
