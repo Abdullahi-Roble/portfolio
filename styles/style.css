@@ -1089,7 +1089,7 @@ header .scrollDown .scrollIcon::after {
 }
 
 .myWorks .worksPic {
-  width: 42%;
+  width: 41.9%;
   height: 100vh;
 }
 
@@ -1101,14 +1101,9 @@ header .scrollDown .scrollIcon::after {
   font-size: 3rem;
 }
 
-.myWorks h2 {
-  text-align: center;
-}
-
 .myWorks .portWorks {
   text-align: center;
   z-index: 99;
-  margin: 0 auto;
 }
 
 .myWorks .galleryWorks {
@@ -1153,4 +1148,83 @@ header .scrollDown .scrollIcon::after {
 
 .myWorks .workLinks a {
   margin: 0 5% 2%;
+}
+
+.contactMe {
+  height: auto;
+}
+
+.contactMe .inTouch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+}
+
+.contactMe .letsTalk {
+  width: 30%;
+}
+
+.contactMe form {
+  width: 60%;
+}
+
+.contactMe form input,
+.contactMe form textarea {
+  width: 100%;
+}
+
+.contactMe form .contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.contactMe form button {
+  border-radius: 0;
+  width: 100%;
+  padding: 1% 2%;
+  margin: 3% 0 0 0;
+}
+
+footer {
+  background: #191e36;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .media i {
+  color: #fff;
+  border: 3px solid #fff;
+  margin-bottom: 2%;
+}
+
+footer .media i:hover {
+  color: #191e36;
+  background: #fff;
 }

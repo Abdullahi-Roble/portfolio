@@ -161,31 +161,37 @@
             </div>
         </section>
         <section id="contact" class="contactMe">
-            <h1>Contact</h1>
-            <h2>Let's Talk!</h2>
-            <form action="submit">
-                <fieldset>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="fullName" placeholder="firstname Lastname">
-                </fieldset>
-                <fieldset>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="emailAddress" placeholder="example@domain.com">
-                </fieldset>
-                <fieldset>
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phoneNumber" placeholder="(555) 555-5555">
-                </fieldset>
-                <fieldset>
-                    <label for="subject">Subject/Title</label>
-                    <input type="text" id="subject" name="subjectTitle" placeholder="Title">
-                </fieldset>
-                <fieldset>
-                    <label for="message">Message</label>
-                    <input type="textarea" id="message" name="message" placeholder="Hello Abdullahi">
-                </fieldset>
-                <button type="submit">Send Message</button>
-            </form>
+            <div class="wrapper inTouch">
+                <div class="letsTalk">
+                    <h1>Contact</h1>
+                    <h2>Let's Talk!</h2>
+                </div>
+                <form action="submit">
+                    <div class="contactInfo">
+                        <fieldset>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="fullName" placeholder="Name" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="emailAddress" placeholder="example@domain.com" required>
+                        </fieldset>
+                    </div>
+                    <!-- <fieldset>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phoneNumber" placeholder="(555) 555-5555">
+                    </fieldset> -->
+                    <fieldset>
+                        <label for="subject">Subject/Title</label>
+                        <input type="text" id="subject" name="subjectTitle" placeholder="Title">
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Message</label>
+                        <textarea rows="5" id="message" name="message" placeholder="Hello Abdullahi" required></textarea>
+                    </fieldset>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
