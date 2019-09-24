@@ -3,11 +3,13 @@
 
 header {
     // background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
-    background: linear-gradient(to bottom, $primary, 70%, $secondary);
+    // background: linear-gradient(to bottom, $primary, 70%, $secondary);
+    // background: linear-gradient(to bottom, #141e30, 50%, #243b55);
     background-size: 50vw;
     background-attachment: fixed;
     height: 100vh;
     position: relative;
+    color: #fff;
 
     .topBar {
         display: flex;
@@ -40,17 +42,6 @@ header {
         flex-flow: column;
     }
 
-    // .boxLeft {
-    //     width: 260px;
-    //     height: 260px;
-    //     background: $primary;
-    //     position: absolute;
-    //     top: 272px;
-    //     left: 600px;
-    //     border-top-left-radius: 50%;
-    //     border-bottom-left-radius: 50%;
-    // }
-
     h1 {
         padding: 130px 0 0 0;
         z-index: 99;
@@ -59,9 +50,6 @@ header {
     }
 
     .title {
-        // position: absolute;
-        // top: 505px;
-        // left: 875px;
         text-align: center;
 
         h4 {
@@ -76,6 +64,16 @@ header {
             flex-flow: row nowrap;
             align-items: center;
             justify-content: space-around;
+
+            button {
+                color: #fff;
+                border: 3px solid #fff;
+
+                &:hover {
+                    color: $accent;
+                    border: 3px solid $accent;
+                }
+            }
         }
     }
 
@@ -106,7 +104,7 @@ header {
                 content: '';
                 width: 8px;
                 height: 8px;
-                
+
                 background-color: $primary;
                 border-radius: 50%;
                 animation: scroll 2s infinite;

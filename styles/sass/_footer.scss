@@ -1,0 +1,22 @@
+@import 'setup';
+@import 'variables';
+
+footer {
+    background: $primary;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    .media i {
+        color: #fff;
+        border: 3px solid #fff;
+        margin-bottom: 2%;
+
+        &:hover {
+            color: $accent;
+            background: #fff;
+        }
+    }
+}

@@ -8,8 +8,7 @@
 
 .aboutMe {
     position: relative;
-    background: $accent;
-    color: $tertiary;
+    // background: $accent;
 
     .portfolioIntro {
         display: flex;
@@ -22,9 +21,9 @@
     }
 
     .boxLeft {
-        width: 260px;
-        height: 260px;
-        background: $accent;
+        width: 238px;
+        height: 238px;
+        background:linear-gradient(#717c80, #81898c, #8d9295);
         position: absolute;
         top: 80px;
         left: 400px;
@@ -56,7 +55,7 @@
     // display: flex;
     // flex-flow: column wrap;
     position: relative;
-    background: $secondary;
+    // background: $secondary;
 
     .skillsList {
         display: flex;
@@ -73,9 +72,9 @@
     }
 
     .boxRight {
-        width: 260px;
-        height: 260px;
-        background: $secondary;
+        width: 241px;
+        height: 241px;
+        background: linear-gradient(#b5b3b4, #c9c3c4, #d9d0d0);
         position: absolute;
         top: 100px;
         right: 300px;
@@ -110,37 +109,9 @@
 // Portfolio Section
 
 .myWorks {
-    position: relative;
-    background: $accent;
-    color: $tertiary;
-
-    .portProjects {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-
-    .boxLeft {
-        width: 260px;
-        height: 260px;
-        background: $accent;
-        position: absolute;
-        top: 80px;
-        left: 320px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-    }
-
-    .worksPic {
-        width: 41.9%;
-        height: 100vh;
-    }
-
+    // min-height: 100vh;
     h1 {
-        padding: 50px 500px 0 0;
-        position: absolute;
-        top: 60px;
-        left: 350px;
+        text-align: center;
         font-size: 3rem;
     }
 
@@ -151,34 +122,25 @@
     }
 
     .galleryWorks {
-        width: 45%;
+        width: 60%;
         margin: 0 auto;
     }
 
     .galleryCell {
         width: 100%;
-    }
-
-    figure {
         display: flex;
-        flex-flow: column wrap;
-        
+        flex-flow: row wrap;
 
-        figcaption {
-            background: $secondary;
-            color: $accent;
+        img {
+            width: 100%;
         }
     }
-
-    // .diaryApp {
-    //     margin: 0 5%;
-    // }
-
     .workLinks {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: flex-start;
+        margin-bottom: 5%;
 
         a {
             margin: 0 5% 2%;
@@ -191,7 +153,7 @@
 // Contact Section
 
 .contactMe {
-    height: auto;
+    margin: 20% 0 0 0;
 
     .inTouch {
         display: flex;
@@ -213,6 +175,10 @@
             width: 100%;
         }
 
+        fieldset {
+            border: none;
+        }
+
         .contactInfo {
             display: flex;
             flex-flow: row nowrap;
@@ -223,28 +189,6 @@
             width: 100%;
             padding: 1% 2%;
             margin: 3% 0 0 0;
-        }
-    }
-}
-
-// Footer
-
-footer {
-    background: $accent;
-    color: #fff;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-
-    .media i {
-        color: #fff;
-        border: 3px solid #fff;
-        margin-bottom: 2%;
-
-        &:hover {
-            color: $accent;
-            background: #fff;
         }
     }
 }
