@@ -7,92 +7,62 @@
 // About Me Section
 
 .aboutMe {
-    position: relative;
-    // background: $accent;
 
     .portfolioIntro {
         display: flex;
         flex-flow: row nowrap;
     }
 
-    .profilePic {
-        width: 66%;
-        // padding: 40px 0 0 0;
+     h1 {
+        // padding: 50px 800px 0 0;
+        text-align: center;
+        font-size: 3rem;
+        margin: 1rem auto;
     }
 
-    .boxLeft {
-        width: 238px;
-        height: 238px;
-        background:linear-gradient(#717c80, #81898c, #8d9295);
-        position: absolute;
-        top: 80px;
-        left: 400px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
+    .profilePic {
+        width: 70%;
+        margin-top: 1.5rem;
+
+        img {
+            border: 3px solid $accent;
+            border-radius: 1rem;
+        }
     }
 
     .myStory {
-        padding: 120px 100px 0 200px;
-        z-index: 99; 
-    }
-    
-    h1 {
-        padding: 50px 800px 0 0;
-        position: absolute;
-        top: 40px;
-        left: 475px;
-        font-size: 3rem;
-    }
-
-    .blurb {
-        padding-top: 20px;
+        padding: 0 1rem 0 2rem;
+        width: 100%;
     }
 }
 
 // Skills Section
 
 .mySkills {
-    // display: flex;
-    // flex-flow: column wrap;
-    position: relative;
-    // background: $secondary;
 
     .skillsList {
         display: flex;
         flex-flow: row-reverse nowrap;
     }
 
-    
     h1 {
-        text-align: right;
-        position: absolute;
-        top: 140px;
-        right: 360px;
         font-size: 3rem;
     }
 
-    .boxRight {
-        width: 241px;
-        height: 241px;
-        background: linear-gradient(#b5b3b4, #c9c3c4, #d9d0d0);
-        position: absolute;
-        top: 100px;
-        right: 300px;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-    }
-
     .skillsPic {
-        width: 44.25%;
+        width: 40%;
     }
 
     .techSkills {
-        padding: 50px 0 0 0;
-        z-index: 99;
         text-align: center;
 
         i {
             font-size: 3rem;
+
+            &:hover {
+                background: $primary;
+                
+            }
         }
     }
 
@@ -141,9 +111,14 @@
         justify-content: center;
         align-items: flex-start;
         margin-bottom: 5%;
-
+        
         a {
+            color: $primary;
             margin: 0 5% 2%;
+
+            &:hover {
+                color: $accent;
+            }
         }
     }
 }

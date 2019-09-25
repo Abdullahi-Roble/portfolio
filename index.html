@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,700|Orbitron:400,700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/styles/assets/ar-logo2.png">
+    <link rel="icon" type="image/png" href="/styles/assets/AR-logo.png">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
@@ -15,10 +15,10 @@
 </head>
 <body>
     <header>
-        <!-- <div class="overhead"></div> -->
         <div class="topBar wrapper">
             <div class="logo">
-                <img src="/styles/assets/ar-logo2.png" alt="Logo depicting initials of website's subject">
+                <img src="/styles/assets/AR-logo.png" alt="Logo depicting initials of website's subject">
+                <!-- Logo courtesy of Shutterstock Images -->
             </div>
             <nav class="menu">
                 <ul>
@@ -31,14 +31,14 @@
         </div>
         <div class="mainHead wrapper">
             <div class="boxLeft"></div>
-            <h1>Abdullahi <span class="lastName">Roble</span></h1>
+            <h1>Abdullah Roble</h1>
             <div class="title">
                 <div class="typedTitles">
                     <h2><span class="titleType"></span></h2>
                 </div>
                 <div class="headLinks">
                     <a href="#about"><button>About Me <i class="fas fa-chevron-right"></i></button></a>
-                    <a href="">Contact Me Now <i class="fas fa-chevron-right"></i></a>
+                    <a href=""><button>Contact Me Now <i class="fas fa-chevron-right"></i></button></a>
                 </div>
             </div>
             <div class="media">
@@ -50,38 +50,33 @@
                 <p>Copyright © 2019 Abdullahi Roble</p>
             </div>
             <div class="scrollDown">
-                <a href="#about" class="scrollIcon"></a>
+                <a href="#about" class="arrowIcon"><i class="far fa-arrow-alt-circle-down"></i></a>
             </div>
         </div>
     </header>
     <main>
         <section id="about" class="aboutMe">
-            <div class="portfolioIntro">
-                <div class="profilePic">
-                    <img src="/styles/assets/self3.png" alt="">
-                    <!-- headshot by Fatima Gueye -->
-                    <div class="boxLeft"></div>
-                </div>
-                <div class="myStory wrapper">
-                    <div class="titlesTitles">
-                        <h1>About Me</h1>
-                        <h2>Nice to meet you! I'm Abdullahi.</h2>
+            <div class="wrapper">
+                <h1>About Me</h1>
+                <div class="portfolioIntro">
+                    <div class="profilePic">
+                        <img src="/styles/assets/self2.png" alt="Self Portrait of Abdullahi Roble">
                     </div>
-                    <div class="blurb">
-                    	<p>I also go by Abdullah! I'm a Front-End Web Developer based in Toronto, Ontario.</p>
-                        <p>Before becoming a Developer, I worked in Information Technology, but my work was more hardware-oriented, focusing primarily on technical solutions. My experiences working with and for people who are always seeking assistance with one issue or another shape my approach to coding, which is to create websites and applications that are not only useful, but solve problems and serve purposes and needs.</p>
-                        <p></p>
+                    <div class="myStory">
+                        <div class="titlesTitles">
+                            <h2><span class="loneLetter"></span></h2>
+                        </div>
+                        <div class="blurb">
+                        	<p>I also go by Abdullah. I'm a Front-End Web Developer based in Toronto, Canada.</p>
+                            <p>Before becoming a Developer, I worked in Information Technology, focusing primarily on technical solutions. My experiences working with and for people who are always seeking assistance with one issue or another helped to shape my approach to coding, which is to create websites and applications that are not only useful, accessible and experiental, but solve problems and serve purposes and needs.</p>
+                            <p>I consider myself to be a lifelong learner, and am always seeking opportunities to further my growth both personally and professionally.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="skills" class="mySkills">
             <div class="skillsList">
-                <div class="skillsPic">
-                    <img src="/styles/assets/linesOfCode.jpg" alt="">
-                    <!-- Photo by Dakota Corbin on Unsplash -->
-                    <div class="boxRight"></div>
-                </div>
                 <div class="techSkills wrapper">
                     <h1>Skills</h1>
                     <h2>Technologies I Have Learned</h2>
@@ -115,7 +110,7 @@
                 <h2>My Portfolio</h2>
                 <div class="galleryWorks">
                     <figure class="galleryCell">
-                        <img src="/styles/assets/zoltarSpeaks.png" alt="">
+                        <img src="/styles/assets/zoltarSpeaks.png" alt="Screenshot of project one">
                         <figcaption>
                             <h4>Zoltar Speaks</h4>
                             <p>A React app that provides a result based upon the user's input (A wish granted!), but only after the user navigates a maze! Can you manage to have your wish granted by Zoltar?</p>
@@ -127,9 +122,9 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryCell">
-                        <img src="/styles/assets/dietaryDiary.png" alt="">
+                        <img src="/styles/assets/dietaryDiary.png" alt="Screenshot of project two">
                         <figcaption>
-                            <h4>Di<span class="dietTitle">et</span>ary</h4>
+                            <h4>Dietary</h4>
                             <p>A React app that uses Firebase to record user entries in their food log! It also automatically calculates calories consumed upon entry.</p>
                             <h5>React | Firebase | Javascript | CSS3 </h5>
                             <div class="workLinks">
@@ -139,7 +134,7 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryCell">
-                        <img src="/styles/assets/sanctuaryHelpers.png" alt="">
+                        <img src="/styles/assets/sanctuaryHelpers.png" alt="Screenshot of project three">
                         <figcaption>
                             <h4>Sanctuary Helpers</h4>
                             <p>PSD conversion into a fully responsive website.</p>

@@ -1,14 +1,26 @@
 
 // Implementing typed.js into header
 
+const letters = {
+    strings: ["Nice to meet you! I'm Abdullah.", "Nice to meet you! I'm Abdullahi."],
+    startDelay: onscroll,
+    typeSpeed: 50,
+    backSpeed: 40,
+    loop: false,
+    backDelay: 1000
+};
+
+const one = new Typed('.loneLetter', letters);
+
 const titles = {
-    strings: [" Front-End Software Engineer", " Technology Enthusiast", "Indoor Sportsman", " Front-End Developer"],
+    strings: ["Front-End Developer", "Technology Enthusiast", "Man of the People", "Front-End Developer"],
     startDelay: 500,
     typeSpeed: 50,
     backSpeed: 40,
-    loop: true,
+    loop: false,
     backDelay: 1000
-}
+};
+
 const typed = new Typed('.titleType', titles);
 
 

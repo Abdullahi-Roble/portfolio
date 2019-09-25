@@ -15,7 +15,7 @@ html {
 
 .wrapper {
     width: 80%;
-    // max-width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -30,8 +30,7 @@ section {
 body {
     font-family: $mainFont;
     background: $primary;
-    background: linear-gradient(to bottom, $primary, $secondary, $tertiary);
-    color: $primary;
+    color: $tertiary;
 
     a {
         text-decoration: none;
@@ -45,7 +44,7 @@ body {
     }
 
     button {
-        background: transparent;
+        background: $primary;
         border: 3px solid $primary;
         padding: 20px 30px;
         border-radius: 500px;
@@ -59,7 +58,7 @@ body {
     }
 
     .media {
-        padding: 20px 0 0 50px;
+        padding: 1rem 0 0 50px;
         margin: 0 auto;
     }
 

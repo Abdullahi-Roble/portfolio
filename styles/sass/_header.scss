@@ -2,21 +2,18 @@
 @import 'variables';
 
 header {
-    // background: url(./assets/CNTower_baseView.jpg) top left no-repeat;
-    // background: linear-gradient(to bottom, $primary, 70%, $secondary);
-    // background: linear-gradient(to bottom, #141e30, 50%, #243b55);
-    background-size: 50vw;
-    background-attachment: fixed;
+    background: url(/styles/assets/water-blip.jpg) no-repeat;
+    // Header image courtesy of Julian Böck on Unsplash //
+    background-size: cover;
     height: 100vh;
     position: relative;
-    color: #fff;
 
     .topBar {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        padding-top: 60px;
+        padding-top: 3rem;
     }
 
     .logo img {
@@ -25,47 +22,44 @@ header {
     }
     
     ul {
-        width: 500px;
+        width: 25rem;
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         a {
-            color: #fff;
+            color: $primary;
         }
     }
 
     .mainHead {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-flow: column;
     }
 
     h1 {
-        padding: 130px 0 0 0;
-        z-index: 99;
-        font-size: 4rem;
-        margin: 0 auto;
+        font-size: 5rem;
+        margin: 4rem auto 3rem;
+        color: $primary;
     }
 
     .title {
         text-align: center;
 
-        h4 {
-            padding-left: 25px;
-        }
-
         .headLinks {
-            padding: 10px;
+            padding: 1rem;
             margin: 0 auto;
-            width: 400px;
+            width: 25rem;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             justify-content: space-around;
 
             button {
+                background: $primary;
                 color: #fff;
                 border: 3px solid #fff;
 
@@ -77,8 +71,12 @@ header {
         }
     }
 
+    .media i {
+        background: $primary;
+    }
+
     .copyright p {
-        height: 500px; 
+        height: 25rem; 
         writing-mode: sideways-lr;
         position: absolute;
         top: 245px;
@@ -89,26 +87,20 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .4s;
-
-        .scrollIcon {
-            height: 2rem;
-            width: 1.2rem;
+        transition: 0.4s;
+        margin: 1.5rem 0;
+        
+        .arrowIcon {
             font-size: 2.2rem;
-            color: $primary;
-            border-radius: 2em;
-            border: solid 3px;
-            margin-top: 3rem;
 
-            &::after {
-                content: '';
-                width: 8px;
-                height: 8px;
-
-                background-color: $primary;
-                border-radius: 50%;
-                animation: scroll 2s infinite;
-            }
         }
-    }    
+
+        // .arrowIcon::after {
+        //     content: '';
+        //     width: 8px;
+        //     height: 8px;
+        //     border-radius: 50%;
+        // }  
+    }
+        
 }
