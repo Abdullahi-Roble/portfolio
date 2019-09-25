@@ -195,7 +195,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -220,7 +220,7 @@ body button {
   border: 3px solid #0a0a0a;
   padding: 20px 30px;
   border-radius: 500px;
-  color: #0a0a0a;
+  color: #b6b6b6;
 }
 
 body button:hover {
@@ -467,7 +467,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -492,7 +492,7 @@ body button {
   border: 3px solid #0a0a0a;
   padding: 20px 30px;
   border-radius: 500px;
-  color: #0a0a0a;
+  color: #b6b6b6;
 }
 
 body button:hover {
@@ -739,7 +739,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -764,7 +764,7 @@ body button {
   border: 3px solid #0a0a0a;
   padding: 20px 30px;
   border-radius: 500px;
-  color: #0a0a0a;
+  color: #b6b6b6;
 }
 
 body button:hover {
@@ -817,8 +817,7 @@ ul {
 header {
   background: url(/styles/assets/water-blip.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
-  position: relative;
+  height: 110vh;
 }
 
 header .topBar {
@@ -1146,7 +1145,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -1171,7 +1170,7 @@ body button {
   border: 3px solid #0a0a0a;
   padding: 20px 30px;
   border-radius: 500px;
-  color: #0a0a0a;
+  color: #b6b6b6;
 }
 
 body button:hover {
@@ -1239,15 +1238,8 @@ footer {
           align-items: center;
 }
 
-footer .media i {
-  color: #fff;
-  border: 3px solid #fff;
-  margin-bottom: 2%;
-}
-
-footer .media i:hover {
-  color: #eabc63;
-  background: #fff;
+.aboutMe {
+  background: #141414;
 }
 
 .aboutMe .portfolioIntro {
@@ -1263,7 +1255,8 @@ footer .media i:hover {
 .aboutMe h1 {
   text-align: center;
   font-size: 3rem;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
+  padding: 3rem 0 0 0;
 }
 
 .aboutMe .profilePic {
@@ -1295,10 +1288,6 @@ footer .media i:hover {
   font-size: 3rem;
 }
 
-.mySkills .skillsPic {
-  width: 40%;
-}
-
 .mySkills .techSkills {
   text-align: center;
 }
@@ -1308,7 +1297,7 @@ footer .media i:hover {
 }
 
 .mySkills .techSkills i:hover {
-  background: #0a0a0a;
+  color: #eabc63;
 }
 
 .mySkills .tech1,
@@ -1321,19 +1310,123 @@ footer .media i:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 50px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.mySkills .tech2 svg {
+  fill: #b6b6b6;
+}
+
+.mySkills .toolKit .html:hover,
+.mySkills .toolKit .html5:hover {
+  color: #e54d26;
+}
+
+.mySkills .toolKit .css:hover,
+.mySkills .toolKit .css3:hover {
+  color: #3d8fc6;
+}
+
+.mySkills .toolKit .sassy:hover,
+.mySkills .toolKit .sass:hover {
+  color: #cc6699;
+}
+
+.mySkills .toolKit .javaSC:hover,
+.mySkills .toolKit .jScript:hover {
+  color: #f0db4f;
+}
+
+.mySkills .toolKit .jQueries:hover,
+.mySkills .toolKit .jQuery:hover {
+  color: #0769ad;
+}
+
+.mySkills .toolKit .gitGit:hover,
+.mySkills .toolKit .git:hover {
+  color: #f34f29;
+}
+
+.mySkills .toolKit .hubGit:hover,
+.mySkills .toolKit .gitHub:hover {
+  color: #181616;
+}
+
+.mySkills .toolKit .react:hover,
+.mySkills .toolKit .react1:hover {
+  color: #61dafb;
+}
+
+.mySkills .toolKit .codeVS:hover,
+.mySkills .toolKit .vsCode:hover {
+  color: #68217a;
+}
+
+.mySkills .toolKit .fireBased p,
+.mySkills .toolKit .firebase p {
+  margin-top: 0.35rem;
+}
+
+.mySkills .toolKit .fireBased:hover .svg1,
+.mySkills .toolKit .firebase:hover .svg1 {
+  fill: #ffa715;
+}
+
+.mySkills .toolKit .fireBased:hover .svg2,
+.mySkills .toolKit .firebase:hover .svg2 {
+  fill: #ffa611;
+}
+
+.mySkills .toolKit .fireBased:hover .svg3,
+.mySkills .toolKit .firebase:hover .svg3 {
+  fill: #ffcb2f;
+}
+
+.mySkills .toolKit .fireBased:hover p,
+.mySkills .toolKit .firebase:hover p {
+  color: #ffa611;
+}
+
+.mySkills .addTools .node:hover,
+.mySkills .addTools .nodeJS:hover {
+  color: #83cd29;
+}
+
+.mySkills .addTools .angular:hover,
+.mySkills .addTools .angJS:hover {
+  color: #c4473a;
+}
+
+.mySkills .addTools .reactNative:hover,
+.mySkills .addTools .react2:hover {
+  color: #61dafb;
+}
+
+.mySkills .addTools .vue:hover,
+.mySkills .addTools .vueJS:hover {
+  color: #60be86;
+}
+
+.mySkills .addTools .pythonPro:hover,
+.mySkills .addTools .python:hover {
+  color: #ffd845;
+}
+
+.myWorks {
+  background: #141414;
 }
 
 .myWorks h1 {
   text-align: center;
   font-size: 3rem;
+  padding: 3rem 0 0 0;
 }
 
 .myWorks .portWorks {
   text-align: center;
-  z-index: 99;
 }
 
 .myWorks .galleryWorks {
@@ -1434,4 +1527,14 @@ footer .media i:hover {
   width: 100%;
   padding: 1% 2%;
   margin: 3% 0 0 0;
+}
+
+.contactMe .media i {
+  color: #fff;
+  border: 3px solid #fff;
+  margin-bottom: 2%;
+}
+
+.contactMe .media i:hover {
+  color: #eabc63;
 }

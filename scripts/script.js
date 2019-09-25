@@ -13,7 +13,7 @@ const letters = {
 const one = new Typed('.loneLetter', letters);
 
 const titles = {
-    strings: ["Front-End Developer", "Technology Enthusiast", "Man of the People", "Front-End Developer"],
+    strings: ["Front-End Developer", "Technology Enthusiast", "Sportsman/Sports Fan", "Front-End Developer"],
     startDelay: 500,
     typeSpeed: 50,
     backSpeed: 40,

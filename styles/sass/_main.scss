@@ -7,6 +7,7 @@
 // About Me Section
 
 .aboutMe {
+    background: #141414;
 
     .portfolioIntro {
         display: flex;
@@ -17,7 +18,8 @@
         // padding: 50px 800px 0 0;
         text-align: center;
         font-size: 3rem;
-        margin: 1rem auto;
+        margin: 0 auto 1rem;
+        padding: 3rem 0 0 0;
     }
 
     .profilePic {
@@ -49,10 +51,6 @@
         font-size: 3rem;
     }
 
-    .skillsPic {
-        width: 40%;
-    }
-
     .techSkills {
         text-align: center;
 
@@ -60,7 +58,7 @@
             font-size: 3rem;
 
             &:hover {
-                background: $primary;
+                color: $accent;
                 
             }
         }
@@ -71,23 +69,154 @@
     .addTools {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        padding: 50px 0;
+        justify-content: space-between;
+        padding: 3rem 0;
+    }
+
+    .tech2 svg {
+        fill: $tertiary;
+    }
+
+    .toolKit {
+        .html,
+        .html5 {
+            &:hover {
+                color: #e54d26;
+            }
+        }
+
+        .css,
+        .css3 {
+            &:hover {
+                color: #3d8fc6;
+            }
+        }
+
+        .sassy,
+        .sass {
+            &:hover {
+                color: #cc6699;
+            }
+        }
+
+        .javaSC,
+        .jScript {
+            &:hover {
+                color: #f0db4f;
+            }
+        }
+
+        .jQueries,
+        .jQuery {
+            &:hover {
+                color: #0769ad;
+            }
+        }
+
+        .gitGit,
+        .git {
+            &:hover {
+                color: #f34f29;
+            }
+        }
+
+        .hubGit,
+        .gitHub {
+            &:hover {
+                color: #181616;
+            }
+        }
+
+        .react,
+        .react1 {
+            &:hover {
+                color: #61dafb;
+            }
+        }
+
+        .codeVS,
+        .vsCode {
+            &:hover {
+                color: #68217a;
+            }
+        }
+
+        .fireBased,
+        .firebase {
+
+            p {
+                margin-top: 0.35rem;
+            }
+            &:hover {
+                .svg1 {
+                    fill: #ffa715;
+                }
+    
+                .svg2 {
+                    fill: #ffa611;
+                }
+                
+                .svg3 {
+                    fill: #ffcb2f;
+                }
+
+                p {
+                    color: #ffa611;
+                }
+            }
+        }
+    }
+    
+    .addTools {
+        .node,
+        .nodeJS {
+            &:hover {
+                color: #83cd29;
+            }
+        }
+
+        .angular,
+        .angJS {
+            &:hover {
+                color: #c4473a;
+            }
+        }
+
+        .reactNative,
+        .react2 {
+            &:hover {
+                color: #61dafb;
+            }
+        }
+
+        .vue,
+        .vueJS {
+            &:hover {
+                color: #60be86;
+            }
+        }
+
+        .pythonPro,
+        .python {
+            &:hover {
+                color: #ffd845;
+            }
+        }
     }
 }
 
 // Portfolio Section
 
 .myWorks {
-    // min-height: 100vh;
+    background: #141414;
     h1 {
         text-align: center;
         font-size: 3rem;
+        padding: 3rem 0 0 0;
     }
 
     .portWorks {
         text-align: center;
-        z-index: 99;
         // margin: 0 auto;
     }
 
@@ -164,6 +293,16 @@
             width: 100%;
             padding: 1% 2%;
             margin: 3% 0 0 0;
+        }
+    }
+
+    .media i {
+        color: #fff;
+        border: 3px solid #fff;
+        margin-bottom: 2%;
+
+        &:hover {
+            color: $accent;
         }
     }
 }

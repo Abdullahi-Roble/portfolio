@@ -24,7 +24,7 @@ img {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
         border: 3px solid $primary;
         padding: 20px 30px;
         border-radius: 500px;
-        color: $primary;
+        color: $tertiary;
         
         &:hover {
             background: $primary;
