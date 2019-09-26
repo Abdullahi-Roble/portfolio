@@ -42,6 +42,16 @@ const flkty = new Flickity(carousel, {
     percentPosition: false
 });
 
+// Smooth Scrollin'
+
+const scrollOne = new SmoothScroll('a[href*="#about"]');
+
+const scrollTwo = new SmoothScroll('a[href*="#skills"]');
+
+const scrollThree = new SmoothScroll('a[href*="#portfolio"]');
+
+const scrollFour = new SmoothScroll('a[href*="#contact"]');
+
 // Animate on Scroll!
 
 AOS.init();

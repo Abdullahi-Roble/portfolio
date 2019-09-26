@@ -36,6 +36,25 @@
         padding: 0 1rem 0 2rem;
         width: 100%;
     }
+
+    .scrollDown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        margin: 1.5rem 0;
+        
+        .arrowIcon {
+            font-size: 2.2rem;
+        }
+
+        // .arrowIcon::after {
+        //     content: '';
+        //     width: 8px;
+        //     height: 8px;
+        //     border-radius: 50%;
+        // }  
+    }
 }
 
 // Skills Section
