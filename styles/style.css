@@ -206,7 +206,7 @@ body {
 
 body a {
   text-decoration: none;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -235,11 +235,11 @@ body .media {
 }
 
 body .media i {
-  border: 3px solid #fff;
+  border: 3px solid #b6b6b6;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -250,20 +250,12 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-body .techSkills i {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body .techSkills i:hover {
-  color: #fff;
-}
-
 h1,
 h2,
 h3,
 h4 {
   font-family: "Orbitron", sans-serif;
+  color: #b6b6b6;
 }
 
 ul {
@@ -478,7 +470,7 @@ body {
 
 body a {
   text-decoration: none;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -507,11 +499,11 @@ body .media {
 }
 
 body .media i {
-  border: 3px solid #fff;
+  border: 3px solid #b6b6b6;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -522,20 +514,12 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-body .techSkills i {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body .techSkills i:hover {
-  color: #fff;
-}
-
 h1,
 h2,
 h3,
 h4 {
   font-family: "Orbitron", sans-serif;
+  color: #b6b6b6;
 }
 
 ul {
@@ -750,7 +734,7 @@ body {
 
 body a {
   text-decoration: none;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -779,11 +763,11 @@ body .media {
 }
 
 body .media i {
-  border: 3px solid #fff;
+  border: 3px solid #b6b6b6;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -794,20 +778,12 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-body .techSkills i {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body .techSkills i:hover {
-  color: #fff;
-}
-
 h1,
 h2,
 h3,
 h4 {
   font-family: "Orbitron", sans-serif;
+  color: #b6b6b6;
 }
 
 ul {
@@ -840,6 +816,12 @@ header .topBar {
 header .logo img {
   width: 50px;
   height: 50px;
+  border: 1px solid #0a0a0a;
+  border-radius: 0.25rem;
+}
+
+header .logo img:hover {
+  border: 1px solid #eabc63;
 }
 
 header ul {
@@ -858,6 +840,7 @@ header ul {
 
 header ul a {
   color: #0a0a0a;
+  font-weight: 700;
 }
 
 header .mainHead {
@@ -906,8 +889,8 @@ header .title .headLinks {
 
 header .title .headLinks button {
   background: #0a0a0a;
-  color: #fff;
-  border: 3px solid #fff;
+  color: #b6b6b6;
+  border: 3px solid #b6b6b6;
 }
 
 header .title .headLinks button:hover {
@@ -917,16 +900,6 @@ header .title .headLinks button:hover {
 
 header .media i {
   background: #0a0a0a;
-}
-
-header .copyright p {
-  height: 25rem;
-  -webkit-writing-mode: sideways-lr;
-      -ms-writing-mode: sideways-lr;
-          writing-mode: sideways-lr;
-  position: absolute;
-  top: 245px;
-  right: 0;
 }
 
 header .scrollDown {
@@ -1156,7 +1129,7 @@ body {
 
 body a {
   text-decoration: none;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1185,11 +1158,11 @@ body .media {
 }
 
 body .media i {
-  border: 3px solid #fff;
+  border: 3px solid #b6b6b6;
   border-radius: 50%;
   padding: 10px;
   margin: 0 50px 0 0;
-  color: #fff;
+  color: #b6b6b6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1200,20 +1173,12 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-body .techSkills i {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body .techSkills i:hover {
-  color: #fff;
-}
-
 h1,
 h2,
 h3,
 h4 {
   font-family: "Orbitron", sans-serif;
+  color: #b6b6b6;
 }
 
 ul {
@@ -1335,7 +1300,7 @@ footer {
   color: #cc6699;
 }
 
-.mySkills .toolKit .javaSC:hover,
+.mySkills .toolKit .javaSc:hover,
 .mySkills .toolKit .jScript:hover {
   color: #f0db4f;
 }
@@ -1417,6 +1382,12 @@ footer {
 
 .myWorks {
   background: #141414;
+  min-height: 100vh;
+  /* smaller, dark, rounded square */
+  /* icon color */
+  /* position outside */
+  /* position dots up a bit */
+  /* dots are lines */
 }
 
 .myWorks h1 {
@@ -1430,23 +1401,65 @@ footer {
 }
 
 .myWorks .galleryWorks {
-  width: 60%;
   margin: 0 auto;
 }
 
 .myWorks .galleryCell {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.myWorks .galleryCell img {
+.myWorks .galleryCell .cellImage {
+  border-radius: 1rem;
   width: 100%;
+  display: block;
+}
+
+.myWorks .flickity-button {
+  background: #333;
+}
+
+.myWorks .flickity-button:hover {
+  background: #eabc63;
+}
+
+.myWorks .flickity-button:hover .flickity-button-icon {
+  fill: #0a0a0a;
+}
+
+.myWorks .flickity-prev-next-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+}
+
+.myWorks .flickity-button-icon {
+  fill: #eabc63;
+}
+
+.myWorks .flickity-prev-next-button.previous {
+  left: -4rem;
+}
+
+.myWorks .flickity-prev-next-button.next {
+  right: -4rem;
+}
+
+.myWorks .flickity-page-dots {
+  bottom: 0;
+}
+
+.myWorks .flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.myWorks .flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto #eabc63;
 }
 
 .myWorks .workLinks {
@@ -1463,12 +1476,12 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 5%;
 }
 
 .myWorks .workLinks a {
-  color: #0a0a0a;
+  color: #b6b6b6;
   margin: 0 5% 2%;
+  font-size: 2rem;
 }
 
 .myWorks .workLinks a:hover {
@@ -1476,27 +1489,25 @@ footer {
 }
 
 .contactMe {
-  margin: 20% 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 .contactMe .inTouch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5%;
-}
-
-.contactMe .letsTalk {
-  width: 30%;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 .contactMe form {
@@ -1506,6 +1517,14 @@ footer {
 .contactMe form input,
 .contactMe form textarea {
   width: 100%;
+  border: 3px solid #0a0a0a;
+  border-radius: 1rem;
+  background: #b6b6b6;
+}
+
+.contactMe form input:focus,
+.contactMe form textarea:focus {
+  outline: 5px auto #eabc63;
 }
 
 .contactMe form fieldset {
@@ -1523,7 +1542,7 @@ footer {
 }
 
 .contactMe form button {
-  border-radius: 0;
+  border-radius: 1rem;
   width: 100%;
   padding: 1% 2%;
   margin: 3% 0 0 0;

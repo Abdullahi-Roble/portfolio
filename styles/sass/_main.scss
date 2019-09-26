@@ -99,7 +99,7 @@
             }
         }
 
-        .javaSC,
+        .javaSc,
         .jScript {
             &:hover {
                 color: #f0db4f;
@@ -209,6 +209,7 @@
 
 .myWorks {
     background: #141414;
+    min-height: 100vh;
     h1 {
         text-align: center;
         font-size: 3rem;
@@ -217,33 +218,81 @@
 
     .portWorks {
         text-align: center;
-        // margin: 0 auto;
     }
 
     .galleryWorks {
-        width: 60%;
         margin: 0 auto;
     }
-
+    
     .galleryCell {
         width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-
-        img {
+        overflow: hidden;
+        margin: 0 auto;
+        
+        .cellImage {
+            border-radius: 1rem;
             width: 100%;
+            display: block;
         }
     }
+
+    /* smaller, dark, rounded square */
+    .flickity-button {
+        background: #333;
+    }
+    .flickity-button:hover {
+        background: $accent;
+
+        .flickity-button-icon {
+            fill: $primary;
+        }
+    }
+
+    // flickity button size
+    .flickity-prev-next-button {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1rem;
+    }
+    /* icon color */
+    .flickity-button-icon {
+        fill: $accent;
+    }
+    /* position outside */
+    .flickity-prev-next-button.previous {
+        left: -4rem;
+    }
+    .flickity-prev-next-button.next {
+        right: -4rem;
+    }
+
+    /* position dots up a bit */
+    .flickity-page-dots {
+        bottom: 0;
+    }
+    /* dots are lines */
+    .flickity-page-dots .dot {
+        height: 4px;
+        width: 40px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .flickity-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 5px auto $accent;
+    }
+
     .workLinks {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: flex-start;
-        margin-bottom: 5%;
         
         a {
-            color: $primary;
+            color: $tertiary;
             margin: 0 5% 2%;
+            font-size: 2rem;
 
             &:hover {
                 color: $accent;
@@ -252,24 +301,23 @@
     }
 }
 
-
-
 // Contact Section
 
 .contactMe {
-    margin: 20% 0 0 0;
+    margin: 2rem 0 0 0;
 
     .inTouch {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
+        flex-flow: column nowrap;
+        justify-content: center;
         align-items: center;
-        margin: 5%;
+        margin: 2rem auto;
+        text-align: center;
     }
 
-    .letsTalk {
-        width: 30%;
-    }
+    // .letsTalk {
+    //     // width: 30%;
+    // }
 
     form {
         width: 60%;
@@ -277,6 +325,13 @@
         input,
         textarea {
             width: 100%;
+            border: 3px solid $primary;
+            border-radius: 1rem;
+            background: $tertiary;
+
+            &:focus {
+                outline: 5px auto $accent;
+            }
         }
 
         fieldset {
@@ -289,7 +344,7 @@
         }
 
         button {
-            border-radius: 0;
+            border-radius: 1rem;
             width: 100%;
             padding: 1% 2%;
             margin: 3% 0 0 0;

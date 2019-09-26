@@ -18,6 +18,12 @@ header {
     .logo img {
         width: 50px;
         height: 50px;
+        border: 1px solid $primary;
+        border-radius: 0.25rem;
+
+        &:hover {
+            border: 1px solid $accent;
+        }
     }
     
     ul {
@@ -29,6 +35,7 @@ header {
 
         a {
             color: $primary;
+            font-weight: 700;
         }
     }
 
@@ -59,8 +66,8 @@ header {
 
             button {
                 background: $primary;
-                color: #fff;
-                border: 3px solid #fff;
+                color: $tertiary;
+                border: 3px solid $tertiary;
 
                 &:hover {
                     color: $accent;
@@ -74,13 +81,13 @@ header {
         background: $primary;
     }
 
-    .copyright p {
-        height: 25rem; 
-        writing-mode: sideways-lr;
-        position: absolute;
-        top: 245px;
-        right: 0;
-    }
+    // .copyright p {
+    //     height: 25rem; 
+    //     writing-mode: sideways-lr;
+    //     position: absolute;
+    //     top: 245px;
+    //     right: 0;
+    // }
 
     .scrollDown {
         display: flex;

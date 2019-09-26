@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Abdullah Roble</title>
 </head>
 <body>
@@ -30,7 +31,6 @@
             </nav>
         </div>
         <div class="mainHead wrapper">
-            <div class="boxLeft"></div>
             <h1>Abdullah Roble</h1>
             <div class="title">
                 <div class="typedTitles">
@@ -46,9 +46,9 @@
                 <a href="https://www.linkedin.com/in/abdullah-roble"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.github.com/abdullahi-roble"><i class="fab fa-github"></i></a>
             </div>
-            <div class="copyright">
+            <!-- <div class="copyright">
                 <p>Copyright © 2019 Abdullahi Roble</p>
-            </div>
+            </div> -->
             <div class="scrollDown">
                 <a href="#about" class="arrowIcon"><i class="far fa-arrow-alt-circle-down"></i></a>
             </div>
@@ -57,16 +57,18 @@
     <main>
         <section id="about" class="aboutMe">
             <div class="wrapper">
-                <h1>About Me</h1>
+                <div data-aos="fade-down" data-aos-duration="1500">
+                	<h1>About Me</h1>
+                </div>
                 <div class="portfolioIntro">
-                    <div class="profilePic">
-                        <img src="/styles/assets/self2.png" alt="Self Portrait of Abdullahi Roble">
+                    <div class="profilePic" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+                        <img src="/styles/assets/self.png" alt="Self Portrait of Abdullahi Roble">
                     </div>
                     <div class="myStory">
-                        <div class="titlesTitles">
+                        <div class="titlesTitles" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="2000">
                             <h2><span class="loneLetter"></span></h2>
                         </div>
-                        <div class="blurb">
+                        <div class="blurb" data-aos="fade-up-left" data-aos-duration="2500">
                         	<p>I also go by Abdullah. I'm a Front-End Web Developer based in Toronto, Canada.</p>
                             <p>Before becoming a Developer, I worked in Information Technology, focusing primarily on technical solutions. My experiences working with and for people who are always seeking assistance with one issue or another helped to shape my approach to coding, which is to create websites and applications that are not only useful, accessible and experiental, but solve problems and serve purposes and needs.</p>
                             <p>I consider myself to be a lifelong learner, and am always seeking opportunities to further my growth both personally and professionally.</p>
@@ -78,49 +80,49 @@
         <section id="skills" class="mySkills">
             <div class="skillsList">
                 <div class="techSkills wrapper">
-                    <h1>Skills</h1>
-                    <h2>Technologies I Have Learned</h2>
+                    <h1 data-aos="zoom-out-down" data-aos-duration="1500">Skills</h1>
+                    <h2 data-aos="zoom-out-down" data-aos-duration="1000">Technologies I Have Learned</h2>
                     <div class="toolKit wrapper">
                         <div class="tech1">
-                            <div class="html">
+                            <div class="html" data-aos="fade-down-right" data-aos-duration="2000">
                                 <i class="devicon-html5-plain html5"></i>
                                 <p>HTML5</p>
                             </div>
-                            <div class="css">
+                            <div class="css" data-aos="fade-down-right" data-aos-duration="1500">
                                 <i class="devicon-css3-plain css3"></i>
                                 <p>CSS3</p>
                             </div>
-                            <div class="sassy">
+                            <div class="sassy" data-aos="fade-down" data-aos-duration="1000">
                                 <i class="devicon-sass-original sass"></i>
                                 <p>Sass</p>
                             </div>
-                            <div class="javaSc">
+                            <div class="javaSc" data-aos="fade-down-left" data-aos-duration="1500">
                                 <i class="devicon-javascript-plain jScript"></i>
                                 <p>JavaScript</p>
                             </div>
-                            <div class="jQueries">
+                            <div class="jQueries" data-aos="fade-down-left" data-aos-duration="2000">
                                 <i class="devicon-jquery-plain jQuery"></i>
                                 <p>jQuery</p>
                             </div>
                         </div>
                         <div class="tech2">
-                            <div class="gitGit">
+                            <div class="gitGit" data-aos="fade-up-right" data-aos-duration="2000">
                                 <i class="devicon-git-plain git"></i>
                                 <p>Git</p>
                             </div>
-                            <div class="hubGit">
+                            <div class="hubGit" data-aos="fade-up-right" data-aos-duration="1500">
                                 <i class="devicon-github-plain gitHub"></i>
                                 <p>GitHub</p>
                             </div>
-                            <div class="react">
+                            <div class="react" data-aos="fade-up" data-aos-duration="1000">
                                 <i class="devicon-react-original react1"></i>
                                 <p>React</p>
                             </div>
-                            <div class="codeVS">
+                            <div class="codeVS" data-aos="fade-up-left" data-aos-duration="1500">
                                 <i class="devicon-visualstudio-plain vsCode"></i>
                                 <p>Visual Studio</p>
                             </div>
-                            <div class="fireBased">
+                            <div class="fireBased" data-aos="fade-up-left" data-aos-duration="2000">
                                 <svg version="1.1" class="svgIcon firebase" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="50px" width="56px" height="70px" viewBox="0 0 256 351"
                                     enable-background="new 0 0 256 351" xml:space="preserve">
@@ -135,25 +137,25 @@
                             </div>
                         </div>
                     </div>
-                    <h2>Technologies I Will Learn</h2>
+                    <h2 data-aos="zoom-out-down" data-aos-duration="1000">Technologies I Will Learn</h2>
                     <div class="addTools wrapper">
-                        <div class="node">
+                        <div class="node" data-aos="fade-up-right" data-aos-duration="2000">
                             <i class="devicon-nodejs-plain nodeJS"></i>
                             <p>Node.js</p>
                         </div>
-                        <div class="angular">
+                        <div class="angular" data-aos="fade-down-right" data-aos-duration="1500">
                             <i class="devicon-angularjs-plain angJS"></i>
                             <p>Angular.js</p>
                         </div>
-                        <div class="reactNative">
+                        <div class="reactNative" data-aos="zoom-in" data-aos-duration="1000">
                             <i class="devicon-react-original react2"></i>
                             <p>React Native</p>
                         </div>
-                        <div class="vue">
+                        <div class="vue" data-aos="fade-down-left" data-aos-duration="1500">
                             <i class="devicon-vuejs-plain vueJS"></i>
                             <p>Vue.js</p>
                         </div>
-                        <div class="pythonPro">
+                        <div class="pythonPro" data-aos="fade-up-left" data-aos-duration="2000">
                             <i class="devicon-python-plain python"></i>
                             <p>Python</p>
                         </div>
@@ -164,11 +166,11 @@
         </section>
         <section id="portfolio" class="myWorks">
             <div class="portWorks wrapper">
-                <h1>Works</h1>
-                <h2>My Portfolio</h2>
-                <div class="galleryWorks">
+                <h1 data-aos="zoom-in-down" data-aos-duration="2000">Works</h1>
+                <h2 data-aos="zoom-in-up" data-aos-duration="2000">My Portfolio</h2>
+                <div class="galleryWorks" data-aos="zoom-in" data-aos-duration="3000">
                     <figure class="galleryCell">
-                        <img src="/styles/assets/zoltarSpeaks.png" alt="Screenshot of project one">
+                        <img class="cellImage" src="/styles/assets/zoltarSpeaks.png" alt="Screenshot of project one">
                         <figcaption>
                             <h4>Zoltar Speaks</h4>
                             <p>A React app that provides a result based upon the user's input (A wish granted!), but only after the user navigates a maze! Can you manage to have your wish granted by Zoltar?</p>
@@ -180,7 +182,7 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryCell">
-                        <img src="/styles/assets/dietaryDiary.png" alt="Screenshot of project two">
+                        <img class="cellImage" src="/styles/assets/dietaryDiary.png" alt="Screenshot of project two">
                         <figcaption>
                             <h4>Dietary</h4>
                             <p>A React app that uses Firebase to record user entries in their food log! It also automatically calculates calories consumed upon entry.</p>
@@ -192,7 +194,7 @@
                         </figcaption>
                     </figure>
                     <figure class="galleryCell">
-                        <img src="/styles/assets/sanctuaryHelpers.png" alt="Screenshot of project three">
+                        <img class="cellImage" src="/styles/assets/sanctuaryHelpers.png" alt="Screenshot of project three">
                         <figcaption>
                             <h4>Sanctuary Helpers</h4>
                             <p>PSD conversion into a fully responsive website.</p>
@@ -209,15 +211,16 @@
         <section id="contact" class="contactMe">
             <div class="wrapper inTouch">
                 <div class="letsTalk">
-                    <h1>Contact</h1>
-                    <h2>Let's Talk!</h2>
+                    <h1 data-aos="slide-right" data-aos-duration="2000">Contact</h1>
+                    <h3 data-aos="slide-left" data-aos-duration="3000">Let's Connect!</h3>
                     <div class="media">
-                        <a href="https://www.twitter.com/abdullahroble"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/abdullah-roble"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.github.com/abdullahi-roble"><i class="fab fa-github"></i></a>
-                        <a href=""><i class="fas fa-at"></i></a>
+                        <a href="https://www.twitter.com/abdullahroble"><i class="fab fa-twitter" data-aos="zoom-in-right" data-aos-duration="3500"></i></a>
+                        <a href="https://www.linkedin.com/in/abdullah-roble"><i class="fab fa-linkedin-in" data-aos="zoom-in-right" data-aos-duration="3000"></i></a>
+                        <a href="https://www.github.com/abdullahi-roble"><i class="fab fa-github" data-aos="zoom-in-left" data-aos-duration="3000"></i></a>
+                        <a href=""><i class="fas fa-at" data-aos="zoom-in-left" data-aos-duration="3500"></i></a>
                     </div>
                 </div>
+                <h3>Message me!</h3>
                 <form action="submit">
                     <div class="contactInfo">
                         <fieldset>
@@ -257,6 +260,7 @@
         crossorigin="anonymous"></script>
     <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/script.js"></script>  
 </body>
 </html>

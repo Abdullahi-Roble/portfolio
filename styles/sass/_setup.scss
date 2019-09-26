@@ -34,7 +34,7 @@ body {
 
     a {
         text-decoration: none;
-        color: #fff;
+        color: $tertiary;
         transition: 0.3s;
 
         &:hover {
@@ -63,25 +63,17 @@ body {
     }
 
     .media i {
-        border: 3px solid #fff;
+        border: 3px solid $tertiary;
         border-radius: 50%;
         padding: 10px;
         margin: 0 50px 0 0;
-        color: #fff;
+        color: $tertiary;
         transition: 0.3s;
 
         &:hover {
             color: $accent;
             background: $primary;
             border: 3px solid $accent;
-        }
-    }
-
-    .techSkills i {
-        transition: 0.3s;
-
-        &:hover {
-            color: #fff;
         }
     }
 }
@@ -91,6 +83,7 @@ h2,
 h3,
 h4 {
     font-family: $titleFont;
+    color: $tertiary;
 }
 
 ul {
