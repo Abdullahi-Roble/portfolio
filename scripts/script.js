@@ -17,13 +17,13 @@ const typed = new Typed('.titleType', titles);
 
 const letters = {
     strings: ["Nice to meet you! I'm Abdullah.", "Nice to meet you! I'm Abdullahi."],
-    startDelay: 5000,
+    startDelay: 500,
     typeSpeed: 50,
     backSpeed: 40,
     loop: false,
     // loopCount: 3,
     backDelay: 1000,
-    showCursor: true,
+    showCursor: false,
 };
 
 const one = new Typed('.loneLetter', letters);
