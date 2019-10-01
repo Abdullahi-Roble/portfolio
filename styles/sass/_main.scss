@@ -12,6 +12,11 @@
     .portfolioIntro {
         display: flex;
         flex-flow: row nowrap;
+
+        @include tabletLand {
+            flex-flow: column;
+            align-items: center;
+        }
     }
 
      h1 {

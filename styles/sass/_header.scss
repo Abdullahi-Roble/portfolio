@@ -7,6 +7,11 @@ header {
     background-size: cover;
     height: 110vh;
 
+    @include tabletLand {
+        // background-size: contain;
+        background-position: center;
+    }
+
     .topBar {
         display: flex;
         flex-flow: row nowrap;
@@ -50,10 +55,22 @@ header {
         font-size: 5rem;
         margin: 4rem auto 3rem;
         color: $primary;
+
+        @include tabletLand {
+            font-size: 3.75rem;
+            margin-bottom: 1rem;
+        }
+
     }
 
     .title {
         text-align: center;
+
+        h2 {
+            @include tabletLand {
+                background: $primary;
+            }
+        }
 
         .headLinks {
             padding: 1rem;
@@ -107,5 +124,4 @@ header {
         //     border-radius: 50%;
         // }  
     }
-        
 }
