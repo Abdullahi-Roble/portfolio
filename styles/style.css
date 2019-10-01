@@ -878,6 +878,12 @@ header h1 {
   }
 }
 
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
 header .title {
   text-align: center;
 }
@@ -1492,8 +1498,20 @@ footer {
   left: -4rem;
 }
 
+@media (max-width: 650px) {
+  .myWorks .flickity-prev-next-button.previous {
+    left: -3rem;
+  }
+}
+
 .myWorks .flickity-prev-next-button.next {
   right: -4rem;
+}
+
+@media (max-width: 650px) {
+  .myWorks .flickity-prev-next-button.next {
+    right: -3rem;
+  }
 }
 
 .myWorks .flickity-page-dots {
@@ -1561,7 +1579,13 @@ footer {
 }
 
 .contactMe form {
-  width: 60%;
+  width: 70%;
+}
+
+@media (max-width: 900px) {
+  .contactMe form {
+    width: 100%;
+  }
 }
 
 .contactMe form input,

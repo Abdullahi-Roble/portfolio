@@ -61,6 +61,10 @@ header {
             margin-bottom: 1rem;
         }
 
+        @include landscapePhone {
+            font-size: 3rem;
+        }
+
     }
 
     .title {
@@ -69,6 +73,10 @@ header {
         h2 {
             @include tabletLand {
                 background: $primary;
+            }
+
+            @include landscapePhone {
+                // background: 
             }
         }
 

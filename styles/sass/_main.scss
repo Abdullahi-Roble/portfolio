@@ -285,9 +285,17 @@
     /* position outside */
     .flickity-prev-next-button.previous {
         left: -4rem;
+
+        @include landscapePhone {
+            left: -3rem;
+        }
     }
     .flickity-prev-next-button.next {
         right: -4rem;
+
+        @include landscapePhone {
+            right: -3rem;
+        }
     }
 
     /* position dots up a bit */
@@ -344,7 +352,11 @@
     // }
 
     form {
-        width: 60%;
+        width: 70%;
+
+        @include tabletLand {
+            width: 100%;
+        }
 
         input,
         textarea {
