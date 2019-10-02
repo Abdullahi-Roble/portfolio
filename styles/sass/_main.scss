@@ -289,12 +289,22 @@
         @include landscapePhone {
             left: -3rem;
         }
+
+        @include mobilePhone {
+            left: -2rem;
+            top: 12.5rem;
+        }
     }
     .flickity-prev-next-button.next {
         right: -4rem;
 
         @include landscapePhone {
             right: -3rem;
+        }
+
+        @include mobilePhone {
+            right: -2rem;
+            top: 12.5rem;
         }
     }
 
