@@ -14,19 +14,19 @@ $mainFont: 'Cairo', sans-serif;
 // Media Queries/Responsive Design
 
 @mixin smallPhone {
-	@media (max-width: 320px) { @content };
+	@media (min-width: 300px) and (max-width: 400px) { @content };
 }
 
 @mixin mobilePhone {
-	@media (max-width: 480px) { @content };
+	@media (min-width: 400px) and (max-width: 600px) { @content };
 }
 
 @mixin landscapePhone {
-	@media (max-width: 650px) { @content };
+	@media (min-width: 600px) and (max-width: 850px) { @content };
 }
 
 @mixin tabletLand {
-	@media (max-width: 900px) { @content };
+	@media (min-width: 850px) and (max-width: 1050px) { @content };
 }
 
 @mixin laptopDesktop {

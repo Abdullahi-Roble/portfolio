@@ -8,7 +8,18 @@ header {
     height: 110vh;
 
     @include tabletLand {
-        // background-size: contain;
+        background-position: center;
+    }
+
+    @include landscapePhone {
+        background-position: center;
+    }
+
+    @include mobilePhone {
+        background-position: center;
+    }
+
+    @include smallPhone {
         background-position: center;
     }
 
@@ -73,6 +84,10 @@ header {
         @include mobilePhone {
             display: none;
         }
+
+        @include smallPhone {
+            display: none;
+        }
     }
 
     .mainHead {
@@ -84,11 +99,11 @@ header {
         .media {
             padding: 1rem 0 0 50px;
             margin: 0 auto;
+            display: flex;
+            flex-flow: row nowrap;
             
             @include smallPhone {
                 padding: 1rem 0 0 0.25rem;
-                display: flex;
-                flex-flow: row nowrap;
             }
         }
     }
@@ -97,6 +112,7 @@ header {
         font-size: 5rem;
         margin: 4rem auto 3rem;
         color: $primary;
+        text-align: center;
 
         @include tabletLand {
             font-size: 3.75rem;
@@ -128,8 +144,13 @@ header {
                 background: $primary;
             }
 
+            @include landscapePhone {
+                background: $primary;
+            }
+
             @include mobilePhone {
                 font-size: 1.25rem;
+                background: $primary;
             }
 
             @include smallPhone {
