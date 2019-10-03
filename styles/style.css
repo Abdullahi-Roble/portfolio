@@ -817,6 +817,7 @@ header .topBar {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 3rem;
+  position: relative;
 }
 
 header .logo img {
@@ -830,7 +831,23 @@ header .logo img:hover {
   border: 1px solid #eabc63;
 }
 
-header ul {
+header .burgerButton,
+header .exit {
+  display: none;
+  color: #0a0a0a;
+  font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  header .burgerButton,
+  header .exit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header .nav {
   width: 25rem;
   list-style: none;
   display: -webkit-box;
@@ -844,15 +861,21 @@ header ul {
           align-items: center;
 }
 
+header .nav a {
+  color: #0a0a0a;
+  font-weight: 700;
+}
+
 @media (max-width: 480px) {
-  header ul {
-    display: none;
+  header .nav {
+    width: 70vw;
   }
 }
 
-header ul a {
-  color: #0a0a0a;
-  font-weight: 700;
+@media (max-width: 480px) {
+  header .aboutLink {
+    display: none;
+  }
 }
 
 header .mainHead {
@@ -963,18 +986,6 @@ header .scrollDown {
 
 header .scrollDown .arrowIcon {
   font-size: 2.2rem;
-}
-
-header .burgerButton {
-  display: none;
-  color: #0a0a0a;
-  font-size: 2rem;
-}
-
-@media (max-width: 480px) {
-  header .burgerButton {
-    display: block;
-  }
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -1366,6 +1377,25 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 3rem 0;
+}
+
+@media (max-width: 480px) {
+  .mySkills .tech1 i, .mySkills .tech1 p,
+  .mySkills .tech2 i,
+  .mySkills .tech2 p,
+  .mySkills .addTools i,
+  .mySkills .addTools p {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySkills .tech1,
+  .mySkills .tech2,
+  .mySkills .addTools {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .mySkills .tech2 svg {

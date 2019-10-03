@@ -95,6 +95,17 @@
         flex-flow: row wrap;
         justify-content: space-between;
         padding: 3rem 0;
+
+        i, p {
+            @include mobilePhone {
+                padding-right: 1rem;
+            }
+        }
+
+        @include mobilePhone {
+                justify-content: space-around;
+            }
+        
     }
 
     .tech2 svg {

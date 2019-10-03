@@ -1,4 +1,7 @@
 
+
+
+
 // Implementing typed.js into header
 
 const titles = {

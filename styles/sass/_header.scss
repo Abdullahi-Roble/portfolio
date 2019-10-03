@@ -18,6 +18,7 @@ header {
         justify-content: space-between;
         align-items: center;
         padding-top: 3rem;
+        position: relative;
     }
 
     .logo img {
@@ -30,21 +31,45 @@ header {
             border: 1px solid $accent;
         }
     }
-    
-    ul {
+
+    .burgerButton,
+    .exit {
+        display: none;
+        color: $primary;
+        font-size: 2rem;
+
+        @include mobilePhone {
+            display: flex;
+        }
+    }
+
+    .menu {
+
+        @include mobilePhone {
+
+        }
+    }
+
+    .nav {
         width: 25rem;
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        @include mobilePhone {
-            display: none;
-        }
-
         a {
             color: $primary;
             font-weight: 700;
+        }
+
+        @include mobilePhone {
+            width: 70vw;
+        }
+    }
+
+    .aboutLink {
+        @include mobilePhone {
+            display: none;
         }
     }
 
@@ -141,16 +166,4 @@ header {
         //     border-radius: 50%;
         // }  
     }
-
-    .burgerButton {
-        display: none;
-        color: $primary;
-        font-size: 2rem;
-
-        @include mobilePhone {
-            display: block;
-        }
-    }
-
-
 }
