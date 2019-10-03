@@ -25,6 +25,10 @@
         font-size: 3rem;
         margin: 0 auto 1rem;
         padding: 3rem 0 0 0;
+
+        @include smallPhone {
+            font-size: 2rem;
+        }
     }
 
     .profilePic {
@@ -35,11 +39,25 @@
             border: 3px solid $accent;
             border-radius: 1rem;
         }
+
+        @include smallPhone {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        @include smallPhone {
+            font-size: 1.25rem;
+        }
     }
 
     .myStory {
         padding: 0 1rem 0 2rem;
         width: 100%;
+
+        @include smallPhone {
+            padding: 0;
+        }
     }
 
     .scrollDown {
@@ -285,9 +303,9 @@
 
     // flickity button size
     .flickity-prev-next-button {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 1rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.5rem;
     }
     /* icon color */
     .flickity-button-icon {
@@ -305,6 +323,11 @@
             left: -2rem;
             top: 12.5rem;
         }
+
+        @include smallPhone {
+            left: -1.45rem;
+            top: 3rem;
+        }
     }
     .flickity-prev-next-button.next {
         right: -4rem;
@@ -316,6 +339,11 @@
         @include mobilePhone {
             right: -2rem;
             top: 12.5rem;
+        }
+
+        @include smallPhone {
+            right: -1.45rem;
+            top: 3rem;
         }
     }
 
@@ -398,6 +426,10 @@
         .contactInfo {
             display: flex;
             flex-flow: row nowrap;
+
+            @include smallPhone {
+                flex-flow: column wrap;
+            }
         }
 
         button {

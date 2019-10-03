@@ -59,14 +59,21 @@ body {
 
     .media {
         padding: 1rem 0 0 50px;
-        margin: 0 auto;
+		margin: 0 auto;
+		
+		@include smallPhone {
+            padding: 1rem 0 0 0.25rem;
+            display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+        }
     }
 
     .media i {
         border: 3px solid $tertiary;
         border-radius: 50%;
         padding: 10px;
-        margin: 0 50px 0 0;
+        margin: 0 2.5rem 0 0;
         color: $tertiary;
         transition: 0.3s;
 
@@ -74,7 +81,11 @@ body {
             color: $accent;
             background: $primary;
             border: 3px solid $accent;
-        }
+		}
+		
+		@include smallPhone {
+			margin: 1rem;
+		}
     }
 }
 
