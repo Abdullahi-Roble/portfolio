@@ -1952,6 +1952,15 @@ footer {
           flex-flow: row nowrap;
 }
 
+@media (min-width: 400px) and (max-width: 600px) {
+  .contactMe form .contactInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
 @media (min-width: 300px) and (max-width: 400px) {
   .contactMe form .contactInfo {
     -webkit-box-orient: vertical;

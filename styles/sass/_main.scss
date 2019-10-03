@@ -442,6 +442,10 @@
             display: flex;
             flex-flow: row nowrap;
 
+            @include mobilePhone {
+                flex-flow: column wrap;
+            }
+            
             @include smallPhone {
                 flex-flow: column wrap;
             }
