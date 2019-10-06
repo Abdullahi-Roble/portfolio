@@ -2,9 +2,8 @@
 @import 'variables';
 
 header {
-    // background: url(/styles/assets/water-blip.jpg) no-repeat;
-    // Header image courtesy of Julian Böck on Unsplash //
     background: url(/styles/assets/left-moon.jpg) #0e0e0e no-repeat;
+    // Header image courtesy of Luke Stackpoole on Unsplash //
     background-size: contain;
     background-position: top left;
     height: 110vh;
@@ -53,7 +52,6 @@ header {
     .burgerButton,
     .exit {
         display: none;
-        // color: $primary;
         font-size: 2rem;
 
         @include mobilePhone {
@@ -69,7 +67,6 @@ header {
         align-items: center;
 
         a {
-            // color: $primary;
             font-weight: 700;
 
             &:hover {
@@ -152,11 +149,6 @@ header {
         text-align: center;
 
         h2 {
-            // @include tabletLand {
-            // }
-
-            // @include landscapePhone {
-            // }
 
             @include mobilePhone {
                 font-size: 1.25rem;
@@ -203,14 +195,6 @@ header {
         position: relative;
     }
 
-    // .copyright p {
-    //     height: 25rem; 
-    //     writing-mode: sideways-lr;
-    //     position: absolute;
-    //     top: 245px;
-    //     right: 0;
-    // }
-
     .scrollDown {
         display: flex;
         justify-content: center;
@@ -226,13 +210,6 @@ header {
                 margin: 0 0 0 1rem;
             }
         }
-
-        // .arrowIcon::after {
-        //     content: '';
-        //     width: 8px;
-        //     height: 8px;
-        //     border-radius: 50%;
-        // }  
     }
 
     #particles-js {
