@@ -2,25 +2,28 @@
 @import 'variables';
 
 header {
-    background: url(/styles/assets/water-blip.jpg) no-repeat;
+    // background: url(/styles/assets/water-blip.jpg) no-repeat;
     // Header image courtesy of Julian Böck on Unsplash //
-    background-size: cover;
+    background: url(/styles/assets/left-moon.jpg) #0e0e0e no-repeat;
+    background-size: contain;
+    background-position: top left;
     height: 110vh;
+    position: relative;
 
     @include tabletLand {
-        background-position: center;
+        background-position: 10% 30%;
     }
 
     @include landscapePhone {
-        background-position: center;
+        background-position: 0% 15%;
     }
 
     @include mobilePhone {
-        background-position: center;
+        background-position: 0% 10%;
     }
 
     @include smallPhone {
-        background-position: center;
+        background-position: 0% 25%;
     }
 
     .topBar {
@@ -50,7 +53,7 @@ header {
     .burgerButton,
     .exit {
         display: none;
-        color: $primary;
+        // color: $primary;
         font-size: 2rem;
 
         @include mobilePhone {
@@ -66,9 +69,18 @@ header {
         align-items: center;
 
         a {
-            color: $primary;
+            // color: $primary;
             font-weight: 700;
-        }
+
+            &:hover {
+                color: $accent;
+                // border-bottom: 5px solid $accent;
+            }
+
+            &:active {
+                border-bottom: 5px solid $accent;
+            }
+        }     
 
         @include mobilePhone {
             width: 70vw;
@@ -110,9 +122,9 @@ header {
 
     h1 {
         font-size: 5rem;
-        margin: 4rem auto 3rem;
-        color: $primary;
+        margin: 7rem auto 1rem;
         text-align: center;
+        // text-transform: uppercase;
 
         @include tabletLand {
             font-size: 3.75rem;
@@ -140,17 +152,14 @@ header {
         text-align: center;
 
         h2 {
-            @include tabletLand {
-                background: $primary;
-            }
+            // @include tabletLand {
+            // }
 
-            @include landscapePhone {
-                background: $primary;
-            }
+            // @include landscapePhone {
+            // }
 
             @include mobilePhone {
                 font-size: 1.25rem;
-                background: $primary;
             }
 
             @include smallPhone {
@@ -167,10 +176,10 @@ header {
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
+            position: relative;
 
             button {
-                background: $primary;
                 color: $tertiary;
                 border: 3px solid $tertiary;
 
@@ -191,7 +200,7 @@ header {
     }
 
     .media i {
-        background: $primary;
+        position: relative;
     }
 
     // .copyright p {
@@ -208,6 +217,7 @@ header {
         align-items: center;
         transition: 0.4s;
         margin: 0 auto;
+        position: relative;
         
         .arrowIcon {
             font-size: 2.2rem;
@@ -223,5 +233,11 @@ header {
         //     height: 8px;
         //     border-radius: 50%;
         // }  
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 }

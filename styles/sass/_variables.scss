@@ -14,7 +14,7 @@ $mainFont: 'Cairo', sans-serif;
 // Media Queries/Responsive Design
 
 @mixin smallPhone {
-	@media (min-width: 300px) and (max-width: 400px) { @content };
+	@media (min-width: 100px) and (max-width: 400px) { @content };
 }
 
 @mixin mobilePhone {

@@ -234,7 +234,7 @@ body .media {
   margin: 0 auto;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media {
     padding: 1rem 0 0 0.25rem;
     display: -webkit-box;
@@ -266,7 +266,7 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media i {
     margin: 1rem;
   }
@@ -520,7 +520,7 @@ body .media {
   margin: 0 auto;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media {
     padding: 1rem 0 0 0.25rem;
     display: -webkit-box;
@@ -552,7 +552,7 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media i {
     margin: 1rem;
   }
@@ -806,7 +806,7 @@ body .media {
   margin: 0 auto;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media {
     padding: 1rem 0 0 0.25rem;
     display: -webkit-box;
@@ -838,7 +838,7 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media i {
     margin: 1rem;
   }
@@ -857,32 +857,34 @@ ul {
 }
 
 header {
-  background: url(/styles/assets/water-blip.jpg) no-repeat;
-  background-size: cover;
+  background: url(/styles/assets/left-moon.jpg) #0e0e0e no-repeat;
+  background-size: contain;
+  background-position: top left;
   height: 110vh;
+  position: relative;
 }
 
 @media (min-width: 850px) and (max-width: 1050px) {
   header {
-    background-position: center;
+    background-position: 10% 30%;
   }
 }
 
 @media (min-width: 600px) and (max-width: 850px) {
   header {
-    background-position: center;
+    background-position: 0% 15%;
   }
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
   header {
-    background-position: center;
+    background-position: 0% 10%;
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header {
-    background-position: center;
+    background-position: 0% 25%;
   }
 }
 
@@ -915,7 +917,7 @@ header .logo img:hover {
   border: 1px solid #eabc63;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .logo img {
     display: none;
   }
@@ -924,7 +926,6 @@ header .logo img:hover {
 header .burgerButton,
 header .exit {
   display: none;
-  color: #0a0a0a;
   font-size: 2rem;
 }
 
@@ -952,8 +953,15 @@ header .nav {
 }
 
 header .nav a {
-  color: #0a0a0a;
   font-weight: 700;
+}
+
+header .nav a:hover {
+  color: #eabc63;
+}
+
+header .nav a:active {
+  border-bottom: 5px solid #eabc63;
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
@@ -962,7 +970,7 @@ header .nav a {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .nav {
     width: 80vw;
     padding: 0;
@@ -975,7 +983,7 @@ header .nav a {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .aboutLink {
     display: none;
   }
@@ -1009,7 +1017,7 @@ header .mainHead .media {
           flex-flow: row nowrap;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .mainHead .media {
     padding: 1rem 0 0 0.25rem;
   }
@@ -1017,8 +1025,7 @@ header .mainHead .media {
 
 header h1 {
   font-size: 5rem;
-  margin: 4rem auto 3rem;
-  color: #0a0a0a;
+  margin: 7rem auto 1rem;
   text-align: center;
 }
 
@@ -1042,7 +1049,7 @@ header h1 {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header h1 {
     font-size: 2.5rem;
     margin-top: 1.5rem;
@@ -1054,26 +1061,13 @@ header .title {
   text-align: center;
 }
 
-@media (min-width: 850px) and (max-width: 1050px) {
-  header .title h2 {
-    background: #0a0a0a;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 850px) {
-  header .title h2 {
-    background: #0a0a0a;
-  }
-}
-
 @media (min-width: 400px) and (max-width: 600px) {
   header .title h2 {
     font-size: 1.25rem;
-    background: #0a0a0a;
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .title h2 {
     font-size: 1rem;
     background: transparent;
@@ -1095,12 +1089,13 @@ header .title .headLinks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
 header .title .headLinks button {
-  background: #0a0a0a;
   color: #b6b6b6;
   border: 3px solid #b6b6b6;
 }
@@ -1110,13 +1105,13 @@ header .title .headLinks button:hover {
   border: 3px solid #eabc63;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .title .headLinks button {
     margin: 0.25rem auto;
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .title .headLinks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1126,7 +1121,7 @@ header .title .headLinks button:hover {
 }
 
 header .media i {
-  background: #0a0a0a;
+  position: relative;
 }
 
 header .scrollDown {
@@ -1142,16 +1137,23 @@ header .scrollDown {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin: 0 auto;
+  position: relative;
 }
 
 header .scrollDown .arrowIcon {
   font-size: 2.2rem;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   header .scrollDown .arrowIcon {
     margin: 0 0 0 1rem;
   }
+}
+
+header #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -1390,7 +1392,7 @@ body .media {
   margin: 0 auto;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media {
     padding: 1rem 0 0 0.25rem;
     display: -webkit-box;
@@ -1422,7 +1424,7 @@ body .media i:hover {
   border: 3px solid #eabc63;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   body .media i {
     margin: 1rem;
   }
@@ -1508,7 +1510,7 @@ footer {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .aboutMe .portfolioIntro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1527,7 +1529,7 @@ footer {
   padding: 3rem 0 0 0;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .aboutMe h1 {
     font-size: 2rem;
   }
@@ -1543,13 +1545,13 @@ footer {
   border-radius: 1rem;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .aboutMe .profilePic {
     width: 100%;
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .aboutMe h2 {
     font-size: 1.25rem;
   }
@@ -1560,7 +1562,7 @@ footer {
   width: 100%;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .aboutMe .myStory {
     padding: 0;
   }
@@ -1583,6 +1585,10 @@ footer {
 
 .aboutMe .scrollDown .arrowIcon {
   font-size: 2.2rem;
+}
+
+.mySkills {
+  position: relative;
 }
 
 .mySkills .skillsList {
@@ -1745,6 +1751,12 @@ footer {
   color: #ffd845;
 }
 
+.mySkills #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .myWorks {
   background: #141414;
   min-height: 100vh;
@@ -1820,7 +1832,7 @@ footer {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .myWorks .flickity-prev-next-button.previous {
     left: -1.45rem;
     top: 3rem;
@@ -1844,7 +1856,7 @@ footer {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .myWorks .flickity-prev-next-button.next {
     right: -1.45rem;
     top: 3rem;
@@ -1961,7 +1973,7 @@ footer {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 100px) and (max-width: 400px) {
   .contactMe form .contactInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
